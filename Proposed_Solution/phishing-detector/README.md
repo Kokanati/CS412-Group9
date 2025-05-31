@@ -42,7 +42,7 @@ Evaluation and Model Export
 
 ```bash
 git clone https://github.com/Kokanati/CS412-Group9.git
-cd CS412-Group9
+cd CS412-Group9/Proposed_Solution/phishing-detector/
 ```
 
 ### Step 2: Create and Activate a Virtual Environment
