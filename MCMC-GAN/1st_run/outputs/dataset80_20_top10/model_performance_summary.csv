@@ -1,0 +1,6 @@
+Model,Train Accuracy,Test Accuracy,Precision,Recall,F1 Score,Runtime (s)
+Logistic_Regression,0.92,0.92,0.61,1.00,0.76,0.06
+Random_Forest,1.00,1.00,1.00,1.00,1.00,0.38
+XGBoost,1.00,1.00,1.00,1.00,1.00,0.11
+CatBoost,1.00,1.00,1.00,1.00,1.00,3.40
+Stacking_Ensemble,1.00,1.00,1.00,1.00,1.00,2.46

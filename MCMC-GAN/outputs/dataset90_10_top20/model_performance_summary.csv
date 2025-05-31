@@ -1,0 +1,6 @@
+Model,Train Accuracy,Test Accuracy,Precision,Recall,ROC-AUC,F1 Score,Runtime (s)
+Logistic_Regression,0.9037,0.9056,0.8478,0.9888,0.9056,0.9129,0.4375
+Random_Forest,0.9759,0.9695,0.9802,0.9583,0.9695,0.9691,2.0050
+XGBoost,0.9727,0.9709,0.9817,0.9597,0.9709,0.9706,0.2867
+CatBoost,0.9726,0.9709,0.9820,0.9593,0.9709,0.9705,5.6956
+Stacking_Ensemble,0.9738,0.9705,0.9774,0.9633,0.9705,0.9703,11.4385

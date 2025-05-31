@@ -1,0 +1,33 @@
+2025-05-28 15:42:29,980 - INFO - 
+=== Starting GAN-Augmented Model Evaluation Pipeline ===
+2025-05-28 15:42:30,045 - INFO - Dataset loaded from dataset/dataset95_5_top30.csv. Shape: (61039, 31)
+2025-05-28 15:42:30,063 - INFO - Before augmentation: Legitimate=40591 (95.00%), Phishing=2136 (5.00%)
+2025-05-28 15:42:30,063 - INFO - Initializing Keras-based GAN for data augmentation...
+2025-05-28 15:42:31,399 - INFO - Epoch 1/100 | D Loss: 0.2049 | G Loss: 1.2774
+2025-05-28 15:42:32,743 - INFO - Epoch 11/100 | D Loss: 0.0305 | G Loss: 3.1537
+2025-05-28 15:42:34,232 - INFO - Epoch 21/100 | D Loss: 0.0023 | G Loss: 5.9443
+2025-05-28 15:42:35,734 - INFO - Epoch 31/100 | D Loss: 0.0010 | G Loss: 7.2071
+2025-05-28 15:42:37,228 - INFO - Epoch 41/100 | D Loss: 0.0123 | G Loss: 4.3656
+2025-05-28 15:42:38,696 - INFO - Epoch 51/100 | D Loss: 0.0004 | G Loss: 7.1137
+2025-05-28 15:42:40,182 - INFO - Epoch 61/100 | D Loss: 0.0003 | G Loss: 8.2138
+2025-05-28 15:42:41,654 - INFO - Epoch 71/100 | D Loss: 0.0006 | G Loss: 6.9561
+2025-05-28 15:42:43,158 - INFO - Epoch 81/100 | D Loss: 0.0003 | G Loss: 9.4406
+2025-05-28 15:42:44,728 - INFO - Epoch 91/100 | D Loss: 0.0001 | G Loss: 10.2105
+2025-05-28 15:42:46,136 - INFO - Epoch 100/100 | D Loss: 0.0002 | G Loss: 8.1011
+2025-05-28 15:42:46,136 - INFO - GAN training complete. Generating synthetic phishing samples...
+2025-05-28 15:42:46,930 - INFO - After augmentation: Legitimate=40591 (50.00%), Synthetic Phishing=40591 (50.00%)
+2025-05-28 15:42:46,930 - INFO - Keras-based GAN augmentation complete.
+2025-05-28 15:42:48,087 - INFO - Augmented dataset saved to 'outputs/dataset95_5_top30/augmented_dataset.csv'
+2025-05-28 15:42:48,106 - INFO - ===== Evaluating Logistic Regression =====
+2025-05-28 15:42:48,758 - INFO - Saved trained model to outputs/dataset95_5_top30/models/Logistic_Regression.joblib
+2025-05-28 15:42:49,067 - INFO - ===== Evaluating Random Forest =====
+2025-05-28 15:42:51,028 - INFO - Saved trained model to outputs/dataset95_5_top30/models/Random_Forest.joblib
+2025-05-28 15:42:51,173 - INFO - ===== Evaluating XGBoost =====
+2025-05-28 15:42:51,491 - INFO - Saved trained model to outputs/dataset95_5_top30/models/XGBoost.joblib
+2025-05-28 15:42:51,639 - INFO - ===== Evaluating CatBoost =====
+2025-05-28 15:42:58,038 - INFO - Saved trained model to outputs/dataset95_5_top30/models/CatBoost.joblib
+2025-05-28 15:42:58,186 - INFO - ===== Evaluating Stacking Ensemble =====
+2025-05-28 15:43:10,202 - INFO - Saved trained model to outputs/dataset95_5_top30/models/Stacking_Ensemble.joblib
+2025-05-28 15:43:10,352 - INFO - Model evaluation summary saved to 'outputs/dataset95_5_top30/model_performance_summary.csv'
+2025-05-28 15:43:10,422 - INFO - Performance comparison plot saved to 'outputs/dataset95_5_top30/model_comparison_plot.png'
+2025-05-28 15:43:10,422 - INFO - === Pipeline execution complete. ===

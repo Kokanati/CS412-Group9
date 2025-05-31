@@ -1,0 +1,981 @@
+2025-05-28 14:02:33,278 - INFO - 
+=== Starting GAN-Augmented Model Evaluation Pipeline ===
+2025-05-28 14:02:36,980 - INFO - 
+=== Starting GAN-Augmented Model Evaluation Pipeline ===
+2025-05-28 14:03:50,278 - INFO - 
+=== Starting GAN-Augmented Model Evaluation Pipeline ===
+2025-05-28 14:03:50,311 - INFO - Dataset loaded from dataset/dataset80_20_top10.csv. Shape: (72500, 11)
+2025-05-28 14:03:50,328 - INFO - Before augmentation: Legitimate=40600 (80.00%), Phishing=10150 (20.00%)
+2025-05-28 14:03:50,328 - INFO - Initializing Keras-based GAN for data augmentation...
+2025-05-28 14:03:51,974 - INFO - Epoch 1/100 | D Loss: 0.1185 | G Loss: 1.8429
+2025-05-28 14:03:58,225 - INFO - Epoch 11/100 | D Loss: 0.2317 | G Loss: 2.4170
+2025-05-28 14:04:04,529 - INFO - Epoch 21/100 | D Loss: 0.1412 | G Loss: 2.5789
+2025-05-28 14:04:10,747 - INFO - Epoch 31/100 | D Loss: 0.1159 | G Loss: 2.2193
+2025-05-28 14:04:17,077 - INFO - Epoch 41/100 | D Loss: 0.1084 | G Loss: 2.5126
+2025-05-28 14:04:23,507 - INFO - Epoch 51/100 | D Loss: 0.1416 | G Loss: 2.4813
+2025-05-28 14:04:29,979 - INFO - Epoch 61/100 | D Loss: 0.0002 | G Loss: 8.0502
+2025-05-28 14:04:36,393 - INFO - Epoch 71/100 | D Loss: 0.2382 | G Loss: 2.4377
+2025-05-28 14:04:42,926 - INFO - Epoch 81/100 | D Loss: 0.0524 | G Loss: 2.3079
+2025-05-28 14:04:49,860 - INFO - Epoch 91/100 | D Loss: 0.1418 | G Loss: 2.4501
+2025-05-28 14:04:56,527 - INFO - Epoch 100/100 | D Loss: 0.1420 | G Loss: 2.4256
+2025-05-28 14:04:56,527 - INFO - GAN training complete. Generating synthetic phishing samples...
+2025-05-28 14:04:56,723 - INFO - After augmentation: Legitimate=40600 (87.12%), Synthetic Phishing=6000 (12.88%)
+2025-05-28 14:04:56,723 - INFO - Keras-based GAN augmentation complete.
+2025-05-28 14:04:56,886 - INFO - Augmented dataset saved to 'augmented_dataset.csv'
+2025-05-28 14:04:56,896 - INFO - ===== Evaluating Logistic Regression =====
+2025-05-28 14:05:00,944 - INFO - 
+=== Starting GAN-Augmented Model Evaluation Pipeline ===
+2025-05-28 14:05:01,001 - INFO - Dataset loaded from dataset/dataset80_20_top20.csv. Shape: (72500, 21)
+2025-05-28 14:05:01,019 - INFO - Before augmentation: Legitimate=40600 (80.00%), Phishing=10150 (20.00%)
+2025-05-28 14:05:01,019 - INFO - Initializing Keras-based GAN for data augmentation...
+2025-05-28 14:05:02,814 - INFO - Epoch 1/100 | D Loss: 0.1595 | G Loss: 1.5031
+2025-05-28 14:05:09,254 - INFO - Epoch 11/100 | D Loss: 0.0002 | G Loss: 8.6326
+2025-05-28 14:05:15,937 - INFO - Epoch 21/100 | D Loss: 0.1412 | G Loss: 2.5946
+2025-05-28 14:05:22,609 - INFO - Epoch 31/100 | D Loss: 0.2098 | G Loss: 2.6047
+2025-05-28 14:05:29,489 - INFO - Epoch 41/100 | D Loss: 0.2066 | G Loss: 2.4672
+2025-05-28 14:05:37,079 - INFO - Epoch 51/100 | D Loss: 0.2095 | G Loss: 2.5962
+2025-05-28 14:05:43,597 - INFO - Epoch 61/100 | D Loss: 0.2346 | G Loss: 2.3085
+2025-05-28 14:05:50,207 - INFO - Epoch 71/100 | D Loss: 0.1142 | G Loss: 2.2720
+2025-05-28 14:05:56,961 - INFO - Epoch 81/100 | D Loss: 0.1417 | G Loss: 2.4734
+2025-05-28 14:06:03,685 - INFO - Epoch 91/100 | D Loss: 0.2825 | G Loss: 2.6820
+2025-05-28 14:06:09,803 - INFO - Epoch 100/100 | D Loss: 0.1436 | G Loss: 2.3029
+2025-05-28 14:06:09,803 - INFO - GAN training complete. Generating synthetic phishing samples...
+2025-05-28 14:06:10,024 - INFO - After augmentation: Legitimate=40600 (87.12%), Synthetic Phishing=6000 (12.88%)
+2025-05-28 14:06:10,024 - INFO - Keras-based GAN augmentation complete.
+2025-05-28 14:06:10,323 - INFO - Augmented dataset saved to 'augmented_dataset.csv'
+2025-05-28 14:06:10,332 - INFO - ===== Evaluating Logistic Regression =====
+2025-05-28 14:06:14,344 - INFO - 
+=== Starting GAN-Augmented Model Evaluation Pipeline ===
+2025-05-28 14:06:14,419 - INFO - Dataset loaded from dataset/dataset80_20_top30.csv. Shape: (72500, 31)
+2025-05-28 14:06:14,440 - INFO - Before augmentation: Legitimate=40600 (80.00%), Phishing=10150 (20.00%)
+2025-05-28 14:06:14,440 - INFO - Initializing Keras-based GAN for data augmentation...
+2025-05-28 14:06:16,356 - INFO - Epoch 1/100 | D Loss: 0.1933 | G Loss: 1.1707
+2025-05-28 14:06:24,192 - INFO - Epoch 11/100 | D Loss: 0.1740 | G Loss: 2.4283
+2025-05-28 14:06:32,402 - INFO - Epoch 21/100 | D Loss: 0.1436 | G Loss: 2.3032
+2025-05-28 14:18:58,139 - INFO - 
+=== Starting GAN-Augmented Model Evaluation Pipeline ===
+2025-05-28 14:18:58,171 - INFO - Dataset loaded from dataset/dataset80_20_top10.csv. Shape: (72500, 11)
+2025-05-28 14:18:58,188 - INFO - Before augmentation: Legitimate=40600 (80.00%), Phishing=10150 (20.00%)
+2025-05-28 14:18:58,188 - INFO - Initializing Keras-based GAN for data augmentation...
+2025-05-28 14:18:59,916 - INFO - Epoch 1/100 | D Loss: 0.2413 | G Loss: 1.1274
+2025-05-28 14:19:06,272 - INFO - Epoch 11/100 | D Loss: 0.0185 | G Loss: 4.5299
+2025-05-28 14:19:12,801 - INFO - Epoch 21/100 | D Loss: 0.2655 | G Loss: 2.3227
+2025-05-28 14:19:19,289 - INFO - Epoch 31/100 | D Loss: 0.2069 | G Loss: 2.4828
+2025-05-28 14:19:25,852 - INFO - Epoch 41/100 | D Loss: 0.1434 | G Loss: 2.3142
+2025-05-28 14:19:32,670 - INFO - Epoch 51/100 | D Loss: 0.2340 | G Loss: 2.2838
+2025-05-28 14:19:39,304 - INFO - Epoch 61/100 | D Loss: 0.1743 | G Loss: 2.4829
+2025-05-28 14:19:46,212 - INFO - Epoch 71/100 | D Loss: 0.0244 | G Loss: 3.7208
+2025-05-28 14:19:53,266 - INFO - Epoch 81/100 | D Loss: 0.0000 | G Loss: 10.1463
+2025-05-28 14:20:00,240 - INFO - Epoch 91/100 | D Loss: 0.2443 | G Loss: 2.6131
+2025-05-28 14:20:06,609 - INFO - Epoch 100/100 | D Loss: 0.1415 | G Loss: 2.5055
+2025-05-28 14:20:06,609 - INFO - GAN training complete. Generating synthetic phishing samples...
+2025-05-28 14:20:06,814 - INFO - After augmentation: Legitimate=40600 (87.12%), Synthetic Phishing=6000 (12.88%)
+2025-05-28 14:20:06,815 - INFO - Keras-based GAN augmentation complete.
+2025-05-28 14:20:06,972 - INFO - Augmented dataset saved to 'augmented_dataset.csv'
+2025-05-28 14:20:06,982 - INFO - ===== Evaluating Logistic Regression =====
+2025-05-28 14:20:07,050 - INFO - Train Accuracy: 0.9161
+2025-05-28 14:20:07,050 - INFO - Test Accuracy: 0.9170
+2025-05-28 14:20:07,050 - INFO - Precision: 0.6081
+2025-05-28 14:20:07,050 - INFO - Recall: 1.0000
+2025-05-28 14:20:07,050 - INFO - F1 Score: 0.7563
+2025-05-28 14:20:07,052 - INFO - Saved trained model to models/Logistic_Regression.joblib
+2025-05-28 14:20:07,052 - INFO - ===== Evaluating Random Forest =====
+2025-05-28 14:20:07,530 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:20:07,530 - INFO - Test Accuracy: 0.9999
+2025-05-28 14:20:07,530 - INFO - Precision: 0.9994
+2025-05-28 14:20:07,530 - INFO - Recall: 1.0000
+2025-05-28 14:20:07,530 - INFO - F1 Score: 0.9997
+2025-05-28 14:20:07,551 - INFO - Saved trained model to models/Random_Forest.joblib
+2025-05-28 14:20:07,551 - INFO - ===== Evaluating XGBoost =====
+2025-05-28 14:20:07,635 - INFO - Train Accuracy: 0.9998
+2025-05-28 14:20:07,635 - INFO - Test Accuracy: 0.9996
+2025-05-28 14:20:07,635 - INFO - Precision: 0.9994
+2025-05-28 14:20:07,635 - INFO - Recall: 0.9972
+2025-05-28 14:20:07,635 - INFO - F1 Score: 0.9983
+2025-05-28 14:20:07,636 - INFO - Saved trained model to models/XGBoost.joblib
+2025-05-28 14:20:07,636 - INFO - ===== Evaluating CatBoost =====
+2025-05-28 14:20:10,925 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:20:10,925 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:20:10,925 - INFO - Precision: 1.0000
+2025-05-28 14:20:10,925 - INFO - Recall: 1.0000
+2025-05-28 14:20:10,925 - INFO - F1 Score: 1.0000
+2025-05-28 14:20:10,926 - INFO - Saved trained model to models/CatBoost.joblib
+2025-05-28 14:20:10,926 - INFO - ===== Evaluating Stacking Ensemble =====
+2025-05-28 14:20:13,665 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:20:13,665 - INFO - Test Accuracy: 0.9999
+2025-05-28 14:20:13,665 - INFO - Precision: 0.9994
+2025-05-28 14:20:13,665 - INFO - Recall: 1.0000
+2025-05-28 14:20:13,665 - INFO - F1 Score: 0.9997
+2025-05-28 14:20:13,694 - INFO - Saved trained model to models/Stacking_Ensemble.joblib
+2025-05-28 14:20:13,694 - INFO - ===== Evaluating Logistic Regression =====
+2025-05-28 14:20:13,753 - INFO - Train Accuracy: 0.9161
+2025-05-28 14:20:13,753 - INFO - Test Accuracy: 0.9170
+2025-05-28 14:20:13,753 - INFO - Precision: 0.6081
+2025-05-28 14:20:13,753 - INFO - Recall: 1.0000
+2025-05-28 14:20:13,753 - INFO - F1 Score: 0.7563
+2025-05-28 14:20:13,753 - INFO - Saved trained model to models/Logistic_Regression.joblib
+2025-05-28 14:20:13,753 - INFO - ===== Evaluating Random Forest =====
+2025-05-28 14:20:14,250 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:20:14,250 - INFO - Test Accuracy: 0.9999
+2025-05-28 14:20:14,250 - INFO - Precision: 0.9994
+2025-05-28 14:20:14,250 - INFO - Recall: 1.0000
+2025-05-28 14:20:14,250 - INFO - F1 Score: 0.9997
+2025-05-28 14:20:14,271 - INFO - Saved trained model to models/Random_Forest.joblib
+2025-05-28 14:20:14,271 - INFO - ===== Evaluating XGBoost =====
+2025-05-28 14:20:14,347 - INFO - Train Accuracy: 0.9998
+2025-05-28 14:20:14,347 - INFO - Test Accuracy: 0.9996
+2025-05-28 14:20:14,347 - INFO - Precision: 0.9994
+2025-05-28 14:20:14,347 - INFO - Recall: 0.9972
+2025-05-28 14:20:14,347 - INFO - F1 Score: 0.9983
+2025-05-28 14:20:14,348 - INFO - Saved trained model to models/XGBoost.joblib
+2025-05-28 14:20:14,348 - INFO - ===== Evaluating CatBoost =====
+2025-05-28 14:20:17,548 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:20:17,548 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:20:17,548 - INFO - Precision: 1.0000
+2025-05-28 14:20:17,548 - INFO - Recall: 1.0000
+2025-05-28 14:20:17,548 - INFO - F1 Score: 1.0000
+2025-05-28 14:20:17,549 - INFO - Saved trained model to models/CatBoost.joblib
+2025-05-28 14:20:17,549 - INFO - ===== Evaluating Stacking Ensemble =====
+2025-05-28 14:20:20,368 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:20:20,368 - INFO - Test Accuracy: 0.9999
+2025-05-28 14:20:20,368 - INFO - Precision: 0.9994
+2025-05-28 14:20:20,368 - INFO - Recall: 1.0000
+2025-05-28 14:20:20,368 - INFO - F1 Score: 0.9997
+2025-05-28 14:20:20,414 - INFO - Saved trained model to models/Stacking_Ensemble.joblib
+2025-05-28 14:20:20,415 - INFO - Model evaluation summary saved to 'model_performance_summary.csv'
+2025-05-28 14:20:21,260 - INFO - Performance comparison plot saved to 'model_comparison_plot.png'
+2025-05-28 14:20:22,386 - INFO - Saved confusion matrix to 'confusion_matrices/Logistic_Regression_confusion_matrix.png'
+2025-05-28 14:20:22,458 - INFO - Saved normalized confusion matrix to 'confusion_matrices/Logistic_Regression_confusion_matrix_normalized.png'
+2025-05-28 14:20:22,561 - INFO - Saved confusion matrix to 'confusion_matrices/Random_Forest_confusion_matrix.png'
+2025-05-28 14:20:22,634 - INFO - Saved normalized confusion matrix to 'confusion_matrices/Random_Forest_confusion_matrix_normalized.png'
+2025-05-28 14:20:22,710 - INFO - Saved confusion matrix to 'confusion_matrices/XGBoost_confusion_matrix.png'
+2025-05-28 14:20:22,780 - INFO - Saved normalized confusion matrix to 'confusion_matrices/XGBoost_confusion_matrix_normalized.png'
+2025-05-28 14:20:22,888 - INFO - Saved confusion matrix to 'confusion_matrices/CatBoost_confusion_matrix.png'
+2025-05-28 14:20:22,959 - INFO - Saved normalized confusion matrix to 'confusion_matrices/CatBoost_confusion_matrix_normalized.png'
+2025-05-28 14:20:23,081 - INFO - Saved confusion matrix to 'confusion_matrices/Stacking_Ensemble_confusion_matrix.png'
+2025-05-28 14:20:23,152 - INFO - Saved normalized confusion matrix to 'confusion_matrices/Stacking_Ensemble_confusion_matrix_normalized.png'
+2025-05-28 14:20:23,152 - INFO - === Pipeline execution complete. Results saved to logs/training_log.txt ===
+2025-05-28 14:20:27,164 - INFO - 
+=== Starting GAN-Augmented Model Evaluation Pipeline ===
+2025-05-28 14:20:27,214 - INFO - Dataset loaded from dataset/dataset80_20_top20.csv. Shape: (72500, 21)
+2025-05-28 14:20:27,230 - INFO - Before augmentation: Legitimate=40600 (80.00%), Phishing=10150 (20.00%)
+2025-05-28 14:20:27,230 - INFO - Initializing Keras-based GAN for data augmentation...
+2025-05-28 14:20:28,928 - INFO - Epoch 1/100 | D Loss: 0.1100 | G Loss: 2.0121
+2025-05-28 14:20:35,797 - INFO - Epoch 11/100 | D Loss: 0.1779 | G Loss: 2.5139
+2025-05-28 14:20:42,893 - INFO - Epoch 21/100 | D Loss: 0.1749 | G Loss: 2.4062
+2025-05-28 14:20:50,041 - INFO - Epoch 31/100 | D Loss: 0.0001 | G Loss: 9.2978
+2025-05-28 14:20:57,264 - INFO - Epoch 41/100 | D Loss: 0.0000 | G Loss: 12.1228
+2025-05-28 14:21:04,500 - INFO - Epoch 51/100 | D Loss: 0.0000 | G Loss: 13.3060
+2025-05-28 14:21:11,739 - INFO - Epoch 61/100 | D Loss: 0.0000 | G Loss: 14.2760
+2025-05-28 14:21:19,126 - INFO - Epoch 71/100 | D Loss: 0.0000 | G Loss: 15.1617
+2025-05-28 14:21:26,533 - INFO - Epoch 81/100 | D Loss: 0.0003 | G Loss: 8.3569
+2025-05-28 14:21:34,395 - INFO - Epoch 91/100 | D Loss: 0.1414 | G Loss: 2.5297
+2025-05-28 14:21:41,234 - INFO - Epoch 100/100 | D Loss: 0.1413 | G Loss: 2.5396
+2025-05-28 14:21:41,234 - INFO - GAN training complete. Generating synthetic phishing samples...
+2025-05-28 14:21:41,436 - INFO - After augmentation: Legitimate=40600 (87.12%), Synthetic Phishing=6000 (12.88%)
+2025-05-28 14:21:41,436 - INFO - Keras-based GAN augmentation complete.
+2025-05-28 14:21:41,730 - INFO - Augmented dataset saved to 'augmented_dataset.csv'
+2025-05-28 14:21:41,740 - INFO - ===== Evaluating Logistic Regression =====
+2025-05-28 14:21:41,822 - INFO - Train Accuracy: 0.9162
+2025-05-28 14:21:41,822 - INFO - Test Accuracy: 0.9169
+2025-05-28 14:21:41,822 - INFO - Precision: 0.6077
+2025-05-28 14:21:41,822 - INFO - Recall: 1.0000
+2025-05-28 14:21:41,822 - INFO - F1 Score: 0.7560
+2025-05-28 14:21:41,823 - INFO - Saved trained model to models/Logistic_Regression.joblib
+2025-05-28 14:21:41,823 - INFO - ===== Evaluating Random Forest =====
+2025-05-28 14:21:42,307 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:21:42,307 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:21:42,308 - INFO - Precision: 1.0000
+2025-05-28 14:21:42,308 - INFO - Recall: 1.0000
+2025-05-28 14:21:42,308 - INFO - F1 Score: 1.0000
+2025-05-28 14:21:42,330 - INFO - Saved trained model to models/Random_Forest.joblib
+2025-05-28 14:21:42,330 - INFO - ===== Evaluating XGBoost =====
+2025-05-28 14:21:42,420 - INFO - Train Accuracy: 0.9996
+2025-05-28 14:21:42,420 - INFO - Test Accuracy: 0.9995
+2025-05-28 14:21:42,420 - INFO - Precision: 1.0000
+2025-05-28 14:21:42,420 - INFO - Recall: 0.9961
+2025-05-28 14:21:42,420 - INFO - F1 Score: 0.9981
+2025-05-28 14:21:42,421 - INFO - Saved trained model to models/XGBoost.joblib
+2025-05-28 14:21:42,421 - INFO - ===== Evaluating CatBoost =====
+2025-05-28 14:21:46,326 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:21:46,326 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:21:46,326 - INFO - Precision: 1.0000
+2025-05-28 14:21:46,326 - INFO - Recall: 1.0000
+2025-05-28 14:21:46,326 - INFO - F1 Score: 1.0000
+2025-05-28 14:21:46,328 - INFO - Saved trained model to models/CatBoost.joblib
+2025-05-28 14:21:46,328 - INFO - ===== Evaluating Stacking Ensemble =====
+2025-05-28 14:21:49,228 - INFO - Train Accuracy: 0.9999
+2025-05-28 14:21:49,228 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:21:49,228 - INFO - Precision: 1.0000
+2025-05-28 14:21:49,228 - INFO - Recall: 1.0000
+2025-05-28 14:21:49,228 - INFO - F1 Score: 1.0000
+2025-05-28 14:21:49,259 - INFO - Saved trained model to models/Stacking_Ensemble.joblib
+2025-05-28 14:21:49,260 - INFO - ===== Evaluating Logistic Regression =====
+2025-05-28 14:21:49,308 - INFO - Train Accuracy: 0.9162
+2025-05-28 14:21:49,308 - INFO - Test Accuracy: 0.9169
+2025-05-28 14:21:49,309 - INFO - Precision: 0.6077
+2025-05-28 14:21:49,309 - INFO - Recall: 1.0000
+2025-05-28 14:21:49,309 - INFO - F1 Score: 0.7560
+2025-05-28 14:21:49,310 - INFO - Saved trained model to models/Logistic_Regression.joblib
+2025-05-28 14:21:49,310 - INFO - ===== Evaluating Random Forest =====
+2025-05-28 14:21:49,810 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:21:49,810 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:21:49,810 - INFO - Precision: 1.0000
+2025-05-28 14:21:49,810 - INFO - Recall: 1.0000
+2025-05-28 14:21:49,810 - INFO - F1 Score: 1.0000
+2025-05-28 14:21:49,831 - INFO - Saved trained model to models/Random_Forest.joblib
+2025-05-28 14:21:49,831 - INFO - ===== Evaluating XGBoost =====
+2025-05-28 14:21:49,937 - INFO - Train Accuracy: 0.9996
+2025-05-28 14:21:49,937 - INFO - Test Accuracy: 0.9995
+2025-05-28 14:21:49,937 - INFO - Precision: 1.0000
+2025-05-28 14:21:49,937 - INFO - Recall: 0.9961
+2025-05-28 14:21:49,937 - INFO - F1 Score: 0.9981
+2025-05-28 14:21:49,938 - INFO - Saved trained model to models/XGBoost.joblib
+2025-05-28 14:21:49,938 - INFO - ===== Evaluating CatBoost =====
+2025-05-28 14:21:53,914 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:21:53,914 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:21:53,914 - INFO - Precision: 1.0000
+2025-05-28 14:21:53,914 - INFO - Recall: 1.0000
+2025-05-28 14:21:53,914 - INFO - F1 Score: 1.0000
+2025-05-28 14:21:53,917 - INFO - Saved trained model to models/CatBoost.joblib
+2025-05-28 14:21:53,917 - INFO - ===== Evaluating Stacking Ensemble =====
+2025-05-28 14:21:57,575 - INFO - Train Accuracy: 0.9999
+2025-05-28 14:21:57,575 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:21:57,575 - INFO - Precision: 1.0000
+2025-05-28 14:21:57,575 - INFO - Recall: 1.0000
+2025-05-28 14:21:57,575 - INFO - F1 Score: 1.0000
+2025-05-28 14:21:57,606 - INFO - Saved trained model to models/Stacking_Ensemble.joblib
+2025-05-28 14:21:57,607 - INFO - Model evaluation summary saved to 'model_performance_summary.csv'
+2025-05-28 14:21:57,844 - INFO - Performance comparison plot saved to 'model_comparison_plot.png'
+2025-05-28 14:21:57,971 - INFO - Saved confusion matrix to 'confusion_matrices/Logistic_Regression_confusion_matrix.png'
+2025-05-28 14:21:58,044 - INFO - Saved normalized confusion matrix to 'confusion_matrices/Logistic_Regression_confusion_matrix_normalized.png'
+2025-05-28 14:21:58,153 - INFO - Saved confusion matrix to 'confusion_matrices/Random_Forest_confusion_matrix.png'
+2025-05-28 14:21:58,228 - INFO - Saved normalized confusion matrix to 'confusion_matrices/Random_Forest_confusion_matrix_normalized.png'
+2025-05-28 14:21:58,306 - INFO - Saved confusion matrix to 'confusion_matrices/XGBoost_confusion_matrix.png'
+2025-05-28 14:21:58,379 - INFO - Saved normalized confusion matrix to 'confusion_matrices/XGBoost_confusion_matrix_normalized.png'
+2025-05-28 14:21:58,517 - INFO - Saved confusion matrix to 'confusion_matrices/CatBoost_confusion_matrix.png'
+2025-05-28 14:21:58,593 - INFO - Saved normalized confusion matrix to 'confusion_matrices/CatBoost_confusion_matrix_normalized.png'
+2025-05-28 14:21:58,711 - INFO - Saved confusion matrix to 'confusion_matrices/Stacking_Ensemble_confusion_matrix.png'
+2025-05-28 14:21:58,793 - INFO - Saved normalized confusion matrix to 'confusion_matrices/Stacking_Ensemble_confusion_matrix_normalized.png'
+2025-05-28 14:21:58,793 - INFO - === Pipeline execution complete. Results saved to logs/training_log.txt ===
+2025-05-28 14:22:02,923 - INFO - 
+=== Starting GAN-Augmented Model Evaluation Pipeline ===
+2025-05-28 14:22:02,996 - INFO - Dataset loaded from dataset/dataset80_20_top30.csv. Shape: (72500, 31)
+2025-05-28 14:22:03,016 - INFO - Before augmentation: Legitimate=40600 (80.00%), Phishing=10150 (20.00%)
+2025-05-28 14:22:03,016 - INFO - Initializing Keras-based GAN for data augmentation...
+2025-05-28 14:22:04,834 - INFO - Epoch 1/100 | D Loss: 0.1640 | G Loss: 1.5663
+2025-05-28 14:22:12,100 - INFO - Epoch 11/100 | D Loss: 0.1418 | G Loss: 2.4611
+2025-05-28 14:22:19,195 - INFO - Epoch 21/100 | D Loss: 0.0001 | G Loss: 8.6313
+2025-05-28 14:22:26,426 - INFO - Epoch 31/100 | D Loss: 0.0000 | G Loss: 9.9874
+2025-05-28 14:22:33,356 - INFO - Epoch 41/100 | D Loss: 0.0000 | G Loss: 11.2302
+2025-05-28 14:22:39,932 - INFO - Epoch 51/100 | D Loss: 0.0000 | G Loss: 12.2744
+2025-05-28 14:22:46,714 - INFO - Epoch 61/100 | D Loss: 0.0000 | G Loss: 13.2374
+2025-05-28 14:22:53,773 - INFO - Epoch 71/100 | D Loss: 0.0000 | G Loss: 14.1521
+2025-05-28 14:23:01,120 - INFO - Epoch 81/100 | D Loss: 0.0000 | G Loss: 15.0293
+2025-05-28 14:23:08,389 - INFO - Epoch 91/100 | D Loss: 0.0000 | G Loss: 15.8709
+2025-05-28 14:23:14,594 - INFO - Epoch 100/100 | D Loss: 0.0030 | G Loss: 5.9316
+2025-05-28 14:23:14,594 - INFO - GAN training complete. Generating synthetic phishing samples...
+2025-05-28 14:23:14,804 - INFO - After augmentation: Legitimate=40600 (87.12%), Synthetic Phishing=6000 (12.88%)
+2025-05-28 14:23:14,804 - INFO - Keras-based GAN augmentation complete.
+2025-05-28 14:23:15,234 - INFO - Augmented dataset saved to 'augmented_dataset.csv'
+2025-05-28 14:23:15,244 - INFO - ===== Evaluating Logistic Regression =====
+2025-05-28 14:23:15,296 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:23:15,296 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:23:15,296 - INFO - Precision: 1.0000
+2025-05-28 14:23:15,296 - INFO - Recall: 1.0000
+2025-05-28 14:23:15,296 - INFO - F1 Score: 1.0000
+2025-05-28 14:23:15,297 - INFO - Saved trained model to models/Logistic_Regression.joblib
+2025-05-28 14:23:15,297 - INFO - ===== Evaluating Random Forest =====
+2025-05-28 14:23:15,802 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:23:15,802 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:23:15,802 - INFO - Precision: 1.0000
+2025-05-28 14:23:15,802 - INFO - Recall: 1.0000
+2025-05-28 14:23:15,802 - INFO - F1 Score: 1.0000
+2025-05-28 14:23:15,823 - INFO - Saved trained model to models/Random_Forest.joblib
+2025-05-28 14:23:15,823 - INFO - ===== Evaluating XGBoost =====
+2025-05-28 14:23:15,898 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:23:15,898 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:23:15,898 - INFO - Precision: 1.0000
+2025-05-28 14:23:15,898 - INFO - Recall: 1.0000
+2025-05-28 14:23:15,898 - INFO - F1 Score: 1.0000
+2025-05-28 14:23:15,899 - INFO - Saved trained model to models/XGBoost.joblib
+2025-05-28 14:23:15,899 - INFO - ===== Evaluating CatBoost =====
+2025-05-28 14:23:20,487 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:23:20,488 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:23:20,488 - INFO - Precision: 1.0000
+2025-05-28 14:23:20,488 - INFO - Recall: 1.0000
+2025-05-28 14:23:20,488 - INFO - F1 Score: 1.0000
+2025-05-28 14:23:20,489 - INFO - Saved trained model to models/CatBoost.joblib
+2025-05-28 14:23:20,489 - INFO - ===== Evaluating Stacking Ensemble =====
+2025-05-28 14:23:23,396 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:23:23,396 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:23:23,397 - INFO - Precision: 1.0000
+2025-05-28 14:23:23,397 - INFO - Recall: 1.0000
+2025-05-28 14:23:23,397 - INFO - F1 Score: 1.0000
+2025-05-28 14:23:23,431 - INFO - Saved trained model to models/Stacking_Ensemble.joblib
+2025-05-28 14:23:23,431 - INFO - ===== Evaluating Logistic Regression =====
+2025-05-28 14:23:23,484 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:23:23,484 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:23:23,484 - INFO - Precision: 1.0000
+2025-05-28 14:23:23,484 - INFO - Recall: 1.0000
+2025-05-28 14:23:23,484 - INFO - F1 Score: 1.0000
+2025-05-28 14:23:23,484 - INFO - Saved trained model to models/Logistic_Regression.joblib
+2025-05-28 14:23:23,484 - INFO - ===== Evaluating Random Forest =====
+2025-05-28 14:23:23,975 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:23:23,975 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:23:23,975 - INFO - Precision: 1.0000
+2025-05-28 14:23:23,975 - INFO - Recall: 1.0000
+2025-05-28 14:23:23,975 - INFO - F1 Score: 1.0000
+2025-05-28 14:23:23,996 - INFO - Saved trained model to models/Random_Forest.joblib
+2025-05-28 14:23:23,996 - INFO - ===== Evaluating XGBoost =====
+2025-05-28 14:23:24,068 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:23:24,068 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:23:24,068 - INFO - Precision: 1.0000
+2025-05-28 14:23:24,068 - INFO - Recall: 1.0000
+2025-05-28 14:23:24,068 - INFO - F1 Score: 1.0000
+2025-05-28 14:23:24,069 - INFO - Saved trained model to models/XGBoost.joblib
+2025-05-28 14:23:24,069 - INFO - ===== Evaluating CatBoost =====
+2025-05-28 14:23:28,519 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:23:28,519 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:23:28,519 - INFO - Precision: 1.0000
+2025-05-28 14:23:28,519 - INFO - Recall: 1.0000
+2025-05-28 14:23:28,519 - INFO - F1 Score: 1.0000
+2025-05-28 14:23:28,520 - INFO - Saved trained model to models/CatBoost.joblib
+2025-05-28 14:23:28,520 - INFO - ===== Evaluating Stacking Ensemble =====
+2025-05-28 14:23:31,367 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:23:31,368 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:23:31,368 - INFO - Precision: 1.0000
+2025-05-28 14:23:31,368 - INFO - Recall: 1.0000
+2025-05-28 14:23:31,368 - INFO - F1 Score: 1.0000
+2025-05-28 14:23:31,399 - INFO - Saved trained model to models/Stacking_Ensemble.joblib
+2025-05-28 14:23:31,405 - INFO - Model evaluation summary saved to 'model_performance_summary.csv'
+2025-05-28 14:23:31,648 - INFO - Performance comparison plot saved to 'model_comparison_plot.png'
+2025-05-28 14:23:31,784 - INFO - Saved confusion matrix to 'confusion_matrices/Logistic_Regression_confusion_matrix.png'
+2025-05-28 14:23:31,858 - INFO - Saved normalized confusion matrix to 'confusion_matrices/Logistic_Regression_confusion_matrix_normalized.png'
+2025-05-28 14:23:31,959 - INFO - Saved confusion matrix to 'confusion_matrices/Random_Forest_confusion_matrix.png'
+2025-05-28 14:23:32,029 - INFO - Saved normalized confusion matrix to 'confusion_matrices/Random_Forest_confusion_matrix_normalized.png'
+2025-05-28 14:23:32,104 - INFO - Saved confusion matrix to 'confusion_matrices/XGBoost_confusion_matrix.png'
+2025-05-28 14:23:32,174 - INFO - Saved normalized confusion matrix to 'confusion_matrices/XGBoost_confusion_matrix_normalized.png'
+2025-05-28 14:23:32,333 - INFO - Saved confusion matrix to 'confusion_matrices/CatBoost_confusion_matrix.png'
+2025-05-28 14:23:32,403 - INFO - Saved normalized confusion matrix to 'confusion_matrices/CatBoost_confusion_matrix_normalized.png'
+2025-05-28 14:23:32,510 - INFO - Saved confusion matrix to 'confusion_matrices/Stacking_Ensemble_confusion_matrix.png'
+2025-05-28 14:23:32,581 - INFO - Saved normalized confusion matrix to 'confusion_matrices/Stacking_Ensemble_confusion_matrix_normalized.png'
+2025-05-28 14:23:32,581 - INFO - === Pipeline execution complete. Results saved to logs/training_log.txt ===
+2025-05-28 14:23:36,599 - INFO - 
+=== Starting GAN-Augmented Model Evaluation Pipeline ===
+2025-05-28 14:23:36,623 - INFO - Dataset loaded from dataset/dataset90_10_top10.csv. Shape: (64440, 11)
+2025-05-28 14:23:36,635 - INFO - Before augmentation: Legitimate=40597 (90.00%), Phishing=4511 (10.00%)
+2025-05-28 14:23:36,635 - INFO - Initializing Keras-based GAN for data augmentation...
+2025-05-28 14:23:38,019 - INFO - Epoch 1/100 | D Loss: 0.3820 | G Loss: 0.7339
+2025-05-28 14:23:40,779 - INFO - Epoch 11/100 | D Loss: 0.0027 | G Loss: 5.5244
+2025-05-28 14:23:43,619 - INFO - Epoch 21/100 | D Loss: 0.0008 | G Loss: 6.9970
+2025-05-28 14:23:46,490 - INFO - Epoch 31/100 | D Loss: 0.0824 | G Loss: 2.5280
+2025-05-28 14:23:49,312 - INFO - Epoch 41/100 | D Loss: 0.2023 | G Loss: 2.3931
+2025-05-28 14:23:52,190 - INFO - Epoch 51/100 | D Loss: 0.1637 | G Loss: 2.4152
+2025-05-28 14:23:55,035 - INFO - Epoch 61/100 | D Loss: 0.2007 | G Loss: 2.2015
+2025-05-28 14:23:57,973 - INFO - Epoch 71/100 | D Loss: 0.2030 | G Loss: 2.4409
+2025-05-28 14:24:00,973 - INFO - Epoch 81/100 | D Loss: 0.1217 | G Loss: 2.7632
+2025-05-28 14:24:03,980 - INFO - Epoch 91/100 | D Loss: 0.3134 | G Loss: 2.3152
+2025-05-28 14:24:06,712 - INFO - Epoch 100/100 | D Loss: 0.1240 | G Loss: 2.4600
+2025-05-28 14:24:06,712 - INFO - GAN training complete. Generating synthetic phishing samples...
+2025-05-28 14:24:06,910 - INFO - After augmentation: Legitimate=40597 (87.12%), Synthetic Phishing=6000 (12.88%)
+2025-05-28 14:24:06,910 - INFO - Keras-based GAN augmentation complete.
+2025-05-28 14:24:07,069 - INFO - Augmented dataset saved to 'augmented_dataset.csv'
+2025-05-28 14:24:07,078 - INFO - ===== Evaluating Logistic Regression =====
+2025-05-28 14:24:07,118 - INFO - Train Accuracy: 0.9169
+2025-05-28 14:24:07,118 - INFO - Test Accuracy: 0.9158
+2025-05-28 14:24:07,118 - INFO - Precision: 0.6046
+2025-05-28 14:24:07,118 - INFO - Recall: 1.0000
+2025-05-28 14:24:07,118 - INFO - F1 Score: 0.7536
+2025-05-28 14:24:07,118 - INFO - Saved trained model to models/Logistic_Regression.joblib
+2025-05-28 14:24:07,118 - INFO - ===== Evaluating Random Forest =====
+2025-05-28 14:24:07,542 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:24:07,543 - INFO - Test Accuracy: 0.9999
+2025-05-28 14:24:07,543 - INFO - Precision: 1.0000
+2025-05-28 14:24:07,543 - INFO - Recall: 0.9994
+2025-05-28 14:24:07,543 - INFO - F1 Score: 0.9997
+2025-05-28 14:24:07,564 - INFO - Saved trained model to models/Random_Forest.joblib
+2025-05-28 14:24:07,564 - INFO - ===== Evaluating XGBoost =====
+2025-05-28 14:24:07,646 - INFO - Train Accuracy: 0.9996
+2025-05-28 14:24:07,646 - INFO - Test Accuracy: 0.9998
+2025-05-28 14:24:07,646 - INFO - Precision: 1.0000
+2025-05-28 14:24:07,646 - INFO - Recall: 0.9983
+2025-05-28 14:24:07,646 - INFO - F1 Score: 0.9992
+2025-05-28 14:24:07,647 - INFO - Saved trained model to models/XGBoost.joblib
+2025-05-28 14:24:07,647 - INFO - ===== Evaluating CatBoost =====
+2025-05-28 14:24:10,917 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:24:10,917 - INFO - Test Accuracy: 0.9999
+2025-05-28 14:24:10,917 - INFO - Precision: 1.0000
+2025-05-28 14:24:10,917 - INFO - Recall: 0.9994
+2025-05-28 14:24:10,917 - INFO - F1 Score: 0.9997
+2025-05-28 14:24:10,918 - INFO - Saved trained model to models/CatBoost.joblib
+2025-05-28 14:24:10,918 - INFO - ===== Evaluating Stacking Ensemble =====
+2025-05-28 14:24:13,340 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:24:13,340 - INFO - Test Accuracy: 0.9999
+2025-05-28 14:24:13,340 - INFO - Precision: 1.0000
+2025-05-28 14:24:13,340 - INFO - Recall: 0.9994
+2025-05-28 14:24:13,340 - INFO - F1 Score: 0.9997
+2025-05-28 14:24:13,370 - INFO - Saved trained model to models/Stacking_Ensemble.joblib
+2025-05-28 14:24:13,370 - INFO - ===== Evaluating Logistic Regression =====
+2025-05-28 14:24:13,417 - INFO - Train Accuracy: 0.9169
+2025-05-28 14:24:13,417 - INFO - Test Accuracy: 0.9158
+2025-05-28 14:24:13,417 - INFO - Precision: 0.6046
+2025-05-28 14:24:13,417 - INFO - Recall: 1.0000
+2025-05-28 14:24:13,417 - INFO - F1 Score: 0.7536
+2025-05-28 14:24:13,417 - INFO - Saved trained model to models/Logistic_Regression.joblib
+2025-05-28 14:24:13,417 - INFO - ===== Evaluating Random Forest =====
+2025-05-28 14:24:13,848 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:24:13,848 - INFO - Test Accuracy: 0.9999
+2025-05-28 14:24:13,848 - INFO - Precision: 1.0000
+2025-05-28 14:24:13,848 - INFO - Recall: 0.9994
+2025-05-28 14:24:13,848 - INFO - F1 Score: 0.9997
+2025-05-28 14:24:13,869 - INFO - Saved trained model to models/Random_Forest.joblib
+2025-05-28 14:24:13,869 - INFO - ===== Evaluating XGBoost =====
+2025-05-28 14:24:13,949 - INFO - Train Accuracy: 0.9996
+2025-05-28 14:24:13,949 - INFO - Test Accuracy: 0.9998
+2025-05-28 14:24:13,950 - INFO - Precision: 1.0000
+2025-05-28 14:24:13,950 - INFO - Recall: 0.9983
+2025-05-28 14:24:13,950 - INFO - F1 Score: 0.9992
+2025-05-28 14:24:13,950 - INFO - Saved trained model to models/XGBoost.joblib
+2025-05-28 14:24:13,950 - INFO - ===== Evaluating CatBoost =====
+2025-05-28 14:24:17,175 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:24:17,175 - INFO - Test Accuracy: 0.9999
+2025-05-28 14:24:17,175 - INFO - Precision: 1.0000
+2025-05-28 14:24:17,175 - INFO - Recall: 0.9994
+2025-05-28 14:24:17,175 - INFO - F1 Score: 0.9997
+2025-05-28 14:24:17,176 - INFO - Saved trained model to models/CatBoost.joblib
+2025-05-28 14:24:17,176 - INFO - ===== Evaluating Stacking Ensemble =====
+2025-05-28 14:24:19,601 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:24:19,601 - INFO - Test Accuracy: 0.9999
+2025-05-28 14:24:19,601 - INFO - Precision: 1.0000
+2025-05-28 14:24:19,601 - INFO - Recall: 0.9994
+2025-05-28 14:24:19,601 - INFO - F1 Score: 0.9997
+2025-05-28 14:24:19,641 - INFO - Saved trained model to models/Stacking_Ensemble.joblib
+2025-05-28 14:24:19,642 - INFO - Model evaluation summary saved to 'model_performance_summary.csv'
+2025-05-28 14:24:19,985 - INFO - Performance comparison plot saved to 'model_comparison_plot.png'
+2025-05-28 14:24:20,105 - INFO - Saved confusion matrix to 'confusion_matrices/Logistic_Regression_confusion_matrix.png'
+2025-05-28 14:24:20,179 - INFO - Saved normalized confusion matrix to 'confusion_matrices/Logistic_Regression_confusion_matrix_normalized.png'
+2025-05-28 14:24:20,280 - INFO - Saved confusion matrix to 'confusion_matrices/Random_Forest_confusion_matrix.png'
+2025-05-28 14:24:20,351 - INFO - Saved normalized confusion matrix to 'confusion_matrices/Random_Forest_confusion_matrix_normalized.png'
+2025-05-28 14:24:20,427 - INFO - Saved confusion matrix to 'confusion_matrices/XGBoost_confusion_matrix.png'
+2025-05-28 14:24:20,497 - INFO - Saved normalized confusion matrix to 'confusion_matrices/XGBoost_confusion_matrix_normalized.png'
+2025-05-28 14:24:20,604 - INFO - Saved confusion matrix to 'confusion_matrices/CatBoost_confusion_matrix.png'
+2025-05-28 14:24:20,675 - INFO - Saved normalized confusion matrix to 'confusion_matrices/CatBoost_confusion_matrix_normalized.png'
+2025-05-28 14:24:20,783 - INFO - Saved confusion matrix to 'confusion_matrices/Stacking_Ensemble_confusion_matrix.png'
+2025-05-28 14:24:20,854 - INFO - Saved normalized confusion matrix to 'confusion_matrices/Stacking_Ensemble_confusion_matrix_normalized.png'
+2025-05-28 14:24:20,854 - INFO - === Pipeline execution complete. Results saved to logs/training_log.txt ===
+2025-05-28 14:24:24,620 - INFO - 
+=== Starting GAN-Augmented Model Evaluation Pipeline ===
+2025-05-28 14:24:24,667 - INFO - Dataset loaded from dataset/dataset90_10_top20.csv. Shape: (64440, 21)
+2025-05-28 14:24:24,682 - INFO - Before augmentation: Legitimate=40597 (90.00%), Phishing=4511 (10.00%)
+2025-05-28 14:24:24,682 - INFO - Initializing Keras-based GAN for data augmentation...
+2025-05-28 14:24:26,146 - INFO - Epoch 1/100 | D Loss: 0.3757 | G Loss: 0.7908
+2025-05-28 14:24:29,303 - INFO - Epoch 11/100 | D Loss: 0.0003 | G Loss: 7.2818
+2025-05-28 14:24:32,522 - INFO - Epoch 21/100 | D Loss: 0.0005 | G Loss: 7.5327
+2025-05-28 14:24:35,934 - INFO - Epoch 31/100 | D Loss: 0.1657 | G Loss: 2.1672
+2025-05-28 14:24:39,082 - INFO - Epoch 41/100 | D Loss: 0.1222 | G Loss: 2.9821
+2025-05-28 14:24:42,151 - INFO - Epoch 51/100 | D Loss: 0.2006 | G Loss: 2.1764
+2025-05-28 14:24:45,253 - INFO - Epoch 61/100 | D Loss: 0.1230 | G Loss: 2.5390
+2025-05-28 14:24:48,355 - INFO - Epoch 71/100 | D Loss: 0.1644 | G Loss: 2.2627
+2025-05-28 14:24:51,205 - INFO - Epoch 81/100 | D Loss: 0.1650 | G Loss: 2.6545
+2025-05-28 14:24:54,030 - INFO - Epoch 91/100 | D Loss: 0.2007 | G Loss: 2.2075
+2025-05-28 14:24:56,583 - INFO - Epoch 100/100 | D Loss: 0.2007 | G Loss: 2.2064
+2025-05-28 14:24:56,583 - INFO - GAN training complete. Generating synthetic phishing samples...
+2025-05-28 14:24:56,778 - INFO - After augmentation: Legitimate=40597 (87.12%), Synthetic Phishing=6000 (12.88%)
+2025-05-28 14:24:56,778 - INFO - Keras-based GAN augmentation complete.
+2025-05-28 14:24:57,073 - INFO - Augmented dataset saved to 'augmented_dataset.csv'
+2025-05-28 14:24:57,084 - INFO - ===== Evaluating Logistic Regression =====
+2025-05-28 14:24:57,128 - INFO - Train Accuracy: 0.9171
+2025-05-28 14:24:57,129 - INFO - Test Accuracy: 0.9155
+2025-05-28 14:24:57,129 - INFO - Precision: 0.6036
+2025-05-28 14:24:57,129 - INFO - Recall: 1.0000
+2025-05-28 14:24:57,129 - INFO - F1 Score: 0.7528
+2025-05-28 14:24:57,130 - INFO - Saved trained model to models/Logistic_Regression.joblib
+2025-05-28 14:24:57,130 - INFO - ===== Evaluating Random Forest =====
+2025-05-28 14:24:57,599 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:24:57,599 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:24:57,599 - INFO - Precision: 1.0000
+2025-05-28 14:24:57,599 - INFO - Recall: 1.0000
+2025-05-28 14:24:57,599 - INFO - F1 Score: 1.0000
+2025-05-28 14:24:57,620 - INFO - Saved trained model to models/Random_Forest.joblib
+2025-05-28 14:24:57,620 - INFO - ===== Evaluating XGBoost =====
+2025-05-28 14:24:57,706 - INFO - Train Accuracy: 0.9997
+2025-05-28 14:24:57,706 - INFO - Test Accuracy: 0.9997
+2025-05-28 14:24:57,706 - INFO - Precision: 0.9994
+2025-05-28 14:24:57,706 - INFO - Recall: 0.9983
+2025-05-28 14:24:57,706 - INFO - F1 Score: 0.9989
+2025-05-28 14:24:57,707 - INFO - Saved trained model to models/XGBoost.joblib
+2025-05-28 14:24:57,707 - INFO - ===== Evaluating CatBoost =====
+2025-05-28 14:25:01,614 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:25:01,614 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:25:01,614 - INFO - Precision: 1.0000
+2025-05-28 14:25:01,614 - INFO - Recall: 1.0000
+2025-05-28 14:25:01,614 - INFO - F1 Score: 1.0000
+2025-05-28 14:25:01,615 - INFO - Saved trained model to models/CatBoost.joblib
+2025-05-28 14:25:01,615 - INFO - ===== Evaluating Stacking Ensemble =====
+2025-05-28 14:25:04,249 - INFO - Train Accuracy: 0.9999
+2025-05-28 14:25:04,249 - INFO - Test Accuracy: 0.9999
+2025-05-28 14:25:04,249 - INFO - Precision: 0.9994
+2025-05-28 14:25:04,249 - INFO - Recall: 1.0000
+2025-05-28 14:25:04,249 - INFO - F1 Score: 0.9997
+2025-05-28 14:25:04,284 - INFO - Saved trained model to models/Stacking_Ensemble.joblib
+2025-05-28 14:25:04,284 - INFO - ===== Evaluating Logistic Regression =====
+2025-05-28 14:25:04,328 - INFO - Train Accuracy: 0.9171
+2025-05-28 14:25:04,328 - INFO - Test Accuracy: 0.9155
+2025-05-28 14:25:04,328 - INFO - Precision: 0.6036
+2025-05-28 14:25:04,328 - INFO - Recall: 1.0000
+2025-05-28 14:25:04,328 - INFO - F1 Score: 0.7528
+2025-05-28 14:25:04,328 - INFO - Saved trained model to models/Logistic_Regression.joblib
+2025-05-28 14:25:04,328 - INFO - ===== Evaluating Random Forest =====
+2025-05-28 14:25:04,790 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:25:04,790 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:25:04,790 - INFO - Precision: 1.0000
+2025-05-28 14:25:04,790 - INFO - Recall: 1.0000
+2025-05-28 14:25:04,790 - INFO - F1 Score: 1.0000
+2025-05-28 14:25:04,810 - INFO - Saved trained model to models/Random_Forest.joblib
+2025-05-28 14:25:04,810 - INFO - ===== Evaluating XGBoost =====
+2025-05-28 14:25:04,899 - INFO - Train Accuracy: 0.9997
+2025-05-28 14:25:04,899 - INFO - Test Accuracy: 0.9997
+2025-05-28 14:25:04,899 - INFO - Precision: 0.9994
+2025-05-28 14:25:04,899 - INFO - Recall: 0.9983
+2025-05-28 14:25:04,899 - INFO - F1 Score: 0.9989
+2025-05-28 14:25:04,900 - INFO - Saved trained model to models/XGBoost.joblib
+2025-05-28 14:25:04,900 - INFO - ===== Evaluating CatBoost =====
+2025-05-28 14:25:08,757 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:25:08,758 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:25:08,758 - INFO - Precision: 1.0000
+2025-05-28 14:25:08,758 - INFO - Recall: 1.0000
+2025-05-28 14:25:08,758 - INFO - F1 Score: 1.0000
+2025-05-28 14:25:08,759 - INFO - Saved trained model to models/CatBoost.joblib
+2025-05-28 14:25:08,759 - INFO - ===== Evaluating Stacking Ensemble =====
+2025-05-28 14:25:11,366 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:25:11,366 - INFO - Test Accuracy: 0.9999
+2025-05-28 14:25:11,366 - INFO - Precision: 0.9994
+2025-05-28 14:25:11,366 - INFO - Recall: 1.0000
+2025-05-28 14:25:11,366 - INFO - F1 Score: 0.9997
+2025-05-28 14:25:11,407 - INFO - Saved trained model to models/Stacking_Ensemble.joblib
+2025-05-28 14:25:11,409 - INFO - Model evaluation summary saved to 'model_performance_summary.csv'
+2025-05-28 14:25:11,647 - INFO - Performance comparison plot saved to 'model_comparison_plot.png'
+2025-05-28 14:25:11,772 - INFO - Saved confusion matrix to 'confusion_matrices/Logistic_Regression_confusion_matrix.png'
+2025-05-28 14:25:11,845 - INFO - Saved normalized confusion matrix to 'confusion_matrices/Logistic_Regression_confusion_matrix_normalized.png'
+2025-05-28 14:25:11,945 - INFO - Saved confusion matrix to 'confusion_matrices/Random_Forest_confusion_matrix.png'
+2025-05-28 14:25:12,016 - INFO - Saved normalized confusion matrix to 'confusion_matrices/Random_Forest_confusion_matrix_normalized.png'
+2025-05-28 14:25:12,091 - INFO - Saved confusion matrix to 'confusion_matrices/XGBoost_confusion_matrix.png'
+2025-05-28 14:25:12,160 - INFO - Saved normalized confusion matrix to 'confusion_matrices/XGBoost_confusion_matrix_normalized.png'
+2025-05-28 14:25:12,293 - INFO - Saved confusion matrix to 'confusion_matrices/CatBoost_confusion_matrix.png'
+2025-05-28 14:25:12,364 - INFO - Saved normalized confusion matrix to 'confusion_matrices/CatBoost_confusion_matrix_normalized.png'
+2025-05-28 14:25:12,470 - INFO - Saved confusion matrix to 'confusion_matrices/Stacking_Ensemble_confusion_matrix.png'
+2025-05-28 14:25:12,541 - INFO - Saved normalized confusion matrix to 'confusion_matrices/Stacking_Ensemble_confusion_matrix_normalized.png'
+2025-05-28 14:25:12,541 - INFO - === Pipeline execution complete. Results saved to logs/training_log.txt ===
+2025-05-28 14:25:16,552 - INFO - 
+=== Starting GAN-Augmented Model Evaluation Pipeline ===
+2025-05-28 14:25:16,617 - INFO - Dataset loaded from dataset/dataset90_10_top30.csv. Shape: (64440, 31)
+2025-05-28 14:25:16,634 - INFO - Before augmentation: Legitimate=40597 (90.00%), Phishing=4511 (10.00%)
+2025-05-28 14:25:16,634 - INFO - Initializing Keras-based GAN for data augmentation...
+2025-05-28 14:25:18,017 - INFO - Epoch 1/100 | D Loss: 0.3336 | G Loss: 0.8636
+2025-05-28 14:25:21,108 - INFO - Epoch 11/100 | D Loss: 0.0034 | G Loss: 5.1362
+2025-05-28 14:25:24,234 - INFO - Epoch 21/100 | D Loss: 0.0014 | G Loss: 5.8899
+2025-05-28 14:25:27,367 - INFO - Epoch 31/100 | D Loss: 0.0003 | G Loss: 7.8518
+2025-05-28 14:25:30,701 - INFO - Epoch 41/100 | D Loss: 0.0001 | G Loss: 8.8036
+2025-05-28 14:25:33,838 - INFO - Epoch 51/100 | D Loss: 0.0001 | G Loss: 9.5207
+2025-05-28 14:25:37,344 - INFO - Epoch 61/100 | D Loss: 0.1644 | G Loss: 2.2700
+2025-05-28 14:25:40,889 - INFO - Epoch 71/100 | D Loss: 0.0869 | G Loss: 2.3806
+2025-05-28 14:25:44,159 - INFO - Epoch 81/100 | D Loss: 0.1217 | G Loss: 2.7623
+2025-05-28 14:25:47,344 - INFO - Epoch 91/100 | D Loss: 0.1218 | G Loss: 2.7161
+2025-05-28 14:25:50,394 - INFO - Epoch 100/100 | D Loss: 0.0398 | G Loss: 2.5696
+2025-05-28 14:25:50,394 - INFO - GAN training complete. Generating synthetic phishing samples...
+2025-05-28 14:25:50,699 - INFO - After augmentation: Legitimate=40597 (87.12%), Synthetic Phishing=6000 (12.88%)
+2025-05-28 14:25:50,700 - INFO - Keras-based GAN augmentation complete.
+2025-05-28 14:25:51,158 - INFO - Augmented dataset saved to 'augmented_dataset.csv'
+2025-05-28 14:25:51,170 - INFO - ===== Evaluating Logistic Regression =====
+2025-05-28 14:25:51,240 - INFO - Train Accuracy: 0.9170
+2025-05-28 14:25:51,240 - INFO - Test Accuracy: 0.9156
+2025-05-28 14:25:51,240 - INFO - Precision: 0.6040
+2025-05-28 14:25:51,240 - INFO - Recall: 1.0000
+2025-05-28 14:25:51,240 - INFO - F1 Score: 0.7531
+2025-05-28 14:25:51,241 - INFO - Saved trained model to models/Logistic_Regression.joblib
+2025-05-28 14:25:51,241 - INFO - ===== Evaluating Random Forest =====
+2025-05-28 14:25:51,808 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:25:51,808 - INFO - Test Accuracy: 0.9999
+2025-05-28 14:25:51,808 - INFO - Precision: 1.0000
+2025-05-28 14:25:51,808 - INFO - Recall: 0.9994
+2025-05-28 14:25:51,808 - INFO - F1 Score: 0.9997
+2025-05-28 14:25:51,829 - INFO - Saved trained model to models/Random_Forest.joblib
+2025-05-28 14:25:51,829 - INFO - ===== Evaluating XGBoost =====
+2025-05-28 14:25:51,991 - INFO - Train Accuracy: 0.9998
+2025-05-28 14:25:51,991 - INFO - Test Accuracy: 0.9997
+2025-05-28 14:25:51,991 - INFO - Precision: 1.0000
+2025-05-28 14:25:51,991 - INFO - Recall: 0.9978
+2025-05-28 14:25:51,991 - INFO - F1 Score: 0.9989
+2025-05-28 14:25:51,992 - INFO - Saved trained model to models/XGBoost.joblib
+2025-05-28 14:25:51,992 - INFO - ===== Evaluating CatBoost =====
+2025-05-28 14:25:56,920 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:25:56,920 - INFO - Test Accuracy: 0.9999
+2025-05-28 14:25:56,920 - INFO - Precision: 1.0000
+2025-05-28 14:25:56,920 - INFO - Recall: 0.9994
+2025-05-28 14:25:56,920 - INFO - F1 Score: 0.9997
+2025-05-28 14:25:56,922 - INFO - Saved trained model to models/CatBoost.joblib
+2025-05-28 14:25:56,922 - INFO - ===== Evaluating Stacking Ensemble =====
+2025-05-28 14:26:00,242 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:26:00,242 - INFO - Test Accuracy: 0.9999
+2025-05-28 14:26:00,242 - INFO - Precision: 1.0000
+2025-05-28 14:26:00,242 - INFO - Recall: 0.9994
+2025-05-28 14:26:00,242 - INFO - F1 Score: 0.9997
+2025-05-28 14:26:00,276 - INFO - Saved trained model to models/Stacking_Ensemble.joblib
+2025-05-28 14:26:00,276 - INFO - ===== Evaluating Logistic Regression =====
+2025-05-28 14:26:00,338 - INFO - Train Accuracy: 0.9170
+2025-05-28 14:26:00,338 - INFO - Test Accuracy: 0.9156
+2025-05-28 14:26:00,338 - INFO - Precision: 0.6040
+2025-05-28 14:26:00,338 - INFO - Recall: 1.0000
+2025-05-28 14:26:00,338 - INFO - F1 Score: 0.7531
+2025-05-28 14:26:00,339 - INFO - Saved trained model to models/Logistic_Regression.joblib
+2025-05-28 14:26:00,339 - INFO - ===== Evaluating Random Forest =====
+2025-05-28 14:26:00,939 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:26:00,940 - INFO - Test Accuracy: 0.9999
+2025-05-28 14:26:00,940 - INFO - Precision: 1.0000
+2025-05-28 14:26:00,940 - INFO - Recall: 0.9994
+2025-05-28 14:26:00,940 - INFO - F1 Score: 0.9997
+2025-05-28 14:26:00,961 - INFO - Saved trained model to models/Random_Forest.joblib
+2025-05-28 14:26:00,961 - INFO - ===== Evaluating XGBoost =====
+2025-05-28 14:26:01,079 - INFO - Train Accuracy: 0.9998
+2025-05-28 14:26:01,079 - INFO - Test Accuracy: 0.9997
+2025-05-28 14:26:01,079 - INFO - Precision: 1.0000
+2025-05-28 14:26:01,079 - INFO - Recall: 0.9978
+2025-05-28 14:26:01,079 - INFO - F1 Score: 0.9989
+2025-05-28 14:26:01,080 - INFO - Saved trained model to models/XGBoost.joblib
+2025-05-28 14:26:01,080 - INFO - ===== Evaluating CatBoost =====
+2025-05-28 14:26:05,639 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:26:05,639 - INFO - Test Accuracy: 0.9999
+2025-05-28 14:26:05,639 - INFO - Precision: 1.0000
+2025-05-28 14:26:05,639 - INFO - Recall: 0.9994
+2025-05-28 14:26:05,640 - INFO - F1 Score: 0.9997
+2025-05-28 14:26:05,641 - INFO - Saved trained model to models/CatBoost.joblib
+2025-05-28 14:26:05,641 - INFO - ===== Evaluating Stacking Ensemble =====
+2025-05-28 14:26:08,557 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:26:08,557 - INFO - Test Accuracy: 0.9999
+2025-05-28 14:26:08,557 - INFO - Precision: 1.0000
+2025-05-28 14:26:08,557 - INFO - Recall: 0.9994
+2025-05-28 14:26:08,558 - INFO - F1 Score: 0.9997
+2025-05-28 14:26:08,591 - INFO - Saved trained model to models/Stacking_Ensemble.joblib
+2025-05-28 14:26:08,592 - INFO - Model evaluation summary saved to 'model_performance_summary.csv'
+2025-05-28 14:26:08,846 - INFO - Performance comparison plot saved to 'model_comparison_plot.png'
+2025-05-28 14:26:08,969 - INFO - Saved confusion matrix to 'confusion_matrices/Logistic_Regression_confusion_matrix.png'
+2025-05-28 14:26:09,040 - INFO - Saved normalized confusion matrix to 'confusion_matrices/Logistic_Regression_confusion_matrix_normalized.png'
+2025-05-28 14:26:09,152 - INFO - Saved confusion matrix to 'confusion_matrices/Random_Forest_confusion_matrix.png'
+2025-05-28 14:26:09,223 - INFO - Saved normalized confusion matrix to 'confusion_matrices/Random_Forest_confusion_matrix_normalized.png'
+2025-05-28 14:26:09,298 - INFO - Saved confusion matrix to 'confusion_matrices/XGBoost_confusion_matrix.png'
+2025-05-28 14:26:09,368 - INFO - Saved normalized confusion matrix to 'confusion_matrices/XGBoost_confusion_matrix_normalized.png'
+2025-05-28 14:26:09,526 - INFO - Saved confusion matrix to 'confusion_matrices/CatBoost_confusion_matrix.png'
+2025-05-28 14:26:09,596 - INFO - Saved normalized confusion matrix to 'confusion_matrices/CatBoost_confusion_matrix_normalized.png'
+2025-05-28 14:26:09,708 - INFO - Saved confusion matrix to 'confusion_matrices/Stacking_Ensemble_confusion_matrix.png'
+2025-05-28 14:26:09,778 - INFO - Saved normalized confusion matrix to 'confusion_matrices/Stacking_Ensemble_confusion_matrix_normalized.png'
+2025-05-28 14:26:09,779 - INFO - === Pipeline execution complete. Results saved to logs/training_log.txt ===
+2025-05-28 14:26:13,835 - INFO - 
+=== Starting GAN-Augmented Model Evaluation Pipeline ===
+2025-05-28 14:26:13,857 - INFO - Dataset loaded from dataset/dataset95_5_top10.csv. Shape: (61039, 11)
+2025-05-28 14:26:13,868 - INFO - Before augmentation: Legitimate=40591 (95.00%), Phishing=2136 (5.00%)
+2025-05-28 14:26:13,869 - INFO - Initializing Keras-based GAN for data augmentation...
+2025-05-28 14:26:15,208 - INFO - Epoch 1/100 | D Loss: 0.2654 | G Loss: 1.0542
+2025-05-28 14:26:16,454 - INFO - Epoch 11/100 | D Loss: 0.0947 | G Loss: 2.2278
+2025-05-28 14:26:17,875 - INFO - Epoch 21/100 | D Loss: 0.2157 | G Loss: 2.8174
+2025-05-28 14:26:19,292 - INFO - Epoch 31/100 | D Loss: 0.3113 | G Loss: 2.6289
+2025-05-28 14:26:20,781 - INFO - Epoch 41/100 | D Loss: 0.1978 | G Loss: 2.4214
+2025-05-28 14:26:22,260 - INFO - Epoch 51/100 | D Loss: 0.2103 | G Loss: 2.5490
+2025-05-28 14:26:23,708 - INFO - Epoch 61/100 | D Loss: 0.1469 | G Loss: 2.5400
+2025-05-28 14:26:25,134 - INFO - Epoch 71/100 | D Loss: 0.1967 | G Loss: 2.3205
+2025-05-28 14:26:26,739 - INFO - Epoch 81/100 | D Loss: 0.1470 | G Loss: 2.5205
+2025-05-28 14:26:28,278 - INFO - Epoch 91/100 | D Loss: 0.2880 | G Loss: 2.2029
+2025-05-28 14:26:29,675 - INFO - Epoch 100/100 | D Loss: 0.1469 | G Loss: 2.5634
+2025-05-28 14:26:29,675 - INFO - GAN training complete. Generating synthetic phishing samples...
+2025-05-28 14:26:29,884 - INFO - After augmentation: Legitimate=40591 (87.12%), Synthetic Phishing=6000 (12.88%)
+2025-05-28 14:26:29,884 - INFO - Keras-based GAN augmentation complete.
+2025-05-28 14:26:30,046 - INFO - Augmented dataset saved to 'augmented_dataset.csv'
+2025-05-28 14:26:30,055 - INFO - ===== Evaluating Logistic Regression =====
+2025-05-28 14:26:30,108 - INFO - Train Accuracy: 0.9179
+2025-05-28 14:26:30,108 - INFO - Test Accuracy: 0.9163
+2025-05-28 14:26:30,108 - INFO - Precision: 0.6061
+2025-05-28 14:26:30,108 - INFO - Recall: 1.0000
+2025-05-28 14:26:30,108 - INFO - F1 Score: 0.7547
+2025-05-28 14:26:30,109 - INFO - Saved trained model to models/Logistic_Regression.joblib
+2025-05-28 14:26:30,109 - INFO - ===== Evaluating Random Forest =====
+2025-05-28 14:26:30,564 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:26:30,564 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:26:30,564 - INFO - Precision: 1.0000
+2025-05-28 14:26:30,564 - INFO - Recall: 1.0000
+2025-05-28 14:26:30,564 - INFO - F1 Score: 1.0000
+2025-05-28 14:26:30,585 - INFO - Saved trained model to models/Random_Forest.joblib
+2025-05-28 14:26:30,585 - INFO - ===== Evaluating XGBoost =====
+2025-05-28 14:26:30,666 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:26:30,666 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:26:30,666 - INFO - Precision: 1.0000
+2025-05-28 14:26:30,666 - INFO - Recall: 1.0000
+2025-05-28 14:26:30,666 - INFO - F1 Score: 1.0000
+2025-05-28 14:26:30,667 - INFO - Saved trained model to models/XGBoost.joblib
+2025-05-28 14:26:30,667 - INFO - ===== Evaluating CatBoost =====
+2025-05-28 14:26:34,013 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:26:34,013 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:26:34,013 - INFO - Precision: 1.0000
+2025-05-28 14:26:34,013 - INFO - Recall: 1.0000
+2025-05-28 14:26:34,013 - INFO - F1 Score: 1.0000
+2025-05-28 14:26:34,014 - INFO - Saved trained model to models/CatBoost.joblib
+2025-05-28 14:26:34,014 - INFO - ===== Evaluating Stacking Ensemble =====
+2025-05-28 14:26:38,876 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:26:38,876 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:26:38,876 - INFO - Precision: 1.0000
+2025-05-28 14:26:38,876 - INFO - Recall: 1.0000
+2025-05-28 14:26:38,876 - INFO - F1 Score: 1.0000
+2025-05-28 14:26:38,912 - INFO - Saved trained model to models/Stacking_Ensemble.joblib
+2025-05-28 14:26:38,913 - INFO - ===== Evaluating Logistic Regression =====
+2025-05-28 14:26:38,970 - INFO - Train Accuracy: 0.9179
+2025-05-28 14:26:38,970 - INFO - Test Accuracy: 0.9163
+2025-05-28 14:26:38,970 - INFO - Precision: 0.6061
+2025-05-28 14:26:38,970 - INFO - Recall: 1.0000
+2025-05-28 14:26:38,971 - INFO - F1 Score: 0.7547
+2025-05-28 14:26:38,971 - INFO - Saved trained model to models/Logistic_Regression.joblib
+2025-05-28 14:26:38,971 - INFO - ===== Evaluating Random Forest =====
+2025-05-28 14:26:39,454 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:26:39,454 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:26:39,454 - INFO - Precision: 1.0000
+2025-05-28 14:26:39,454 - INFO - Recall: 1.0000
+2025-05-28 14:26:39,454 - INFO - F1 Score: 1.0000
+2025-05-28 14:26:39,475 - INFO - Saved trained model to models/Random_Forest.joblib
+2025-05-28 14:26:39,475 - INFO - ===== Evaluating XGBoost =====
+2025-05-28 14:26:39,557 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:26:39,557 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:26:39,557 - INFO - Precision: 1.0000
+2025-05-28 14:26:39,557 - INFO - Recall: 1.0000
+2025-05-28 14:26:39,557 - INFO - F1 Score: 1.0000
+2025-05-28 14:26:39,558 - INFO - Saved trained model to models/XGBoost.joblib
+2025-05-28 14:26:39,558 - INFO - ===== Evaluating CatBoost =====
+2025-05-28 14:26:42,780 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:26:42,780 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:26:42,780 - INFO - Precision: 1.0000
+2025-05-28 14:26:42,780 - INFO - Recall: 1.0000
+2025-05-28 14:26:42,781 - INFO - F1 Score: 1.0000
+2025-05-28 14:26:42,781 - INFO - Saved trained model to models/CatBoost.joblib
+2025-05-28 14:26:42,781 - INFO - ===== Evaluating Stacking Ensemble =====
+2025-05-28 14:26:45,397 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:26:45,397 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:26:45,397 - INFO - Precision: 1.0000
+2025-05-28 14:26:45,397 - INFO - Recall: 1.0000
+2025-05-28 14:26:45,397 - INFO - F1 Score: 1.0000
+2025-05-28 14:26:45,433 - INFO - Saved trained model to models/Stacking_Ensemble.joblib
+2025-05-28 14:26:45,435 - INFO - Model evaluation summary saved to 'model_performance_summary.csv'
+2025-05-28 14:26:45,663 - INFO - Performance comparison plot saved to 'model_comparison_plot.png'
+2025-05-28 14:26:45,801 - INFO - Saved confusion matrix to 'confusion_matrices/Logistic_Regression_confusion_matrix.png'
+2025-05-28 14:26:45,876 - INFO - Saved normalized confusion matrix to 'confusion_matrices/Logistic_Regression_confusion_matrix_normalized.png'
+2025-05-28 14:26:45,979 - INFO - Saved confusion matrix to 'confusion_matrices/Random_Forest_confusion_matrix.png'
+2025-05-28 14:26:46,050 - INFO - Saved normalized confusion matrix to 'confusion_matrices/Random_Forest_confusion_matrix_normalized.png'
+2025-05-28 14:26:46,125 - INFO - Saved confusion matrix to 'confusion_matrices/XGBoost_confusion_matrix.png'
+2025-05-28 14:26:46,195 - INFO - Saved normalized confusion matrix to 'confusion_matrices/XGBoost_confusion_matrix_normalized.png'
+2025-05-28 14:26:46,304 - INFO - Saved confusion matrix to 'confusion_matrices/CatBoost_confusion_matrix.png'
+2025-05-28 14:26:46,374 - INFO - Saved normalized confusion matrix to 'confusion_matrices/CatBoost_confusion_matrix_normalized.png'
+2025-05-28 14:26:46,513 - INFO - Saved confusion matrix to 'confusion_matrices/Stacking_Ensemble_confusion_matrix.png'
+2025-05-28 14:26:46,584 - INFO - Saved normalized confusion matrix to 'confusion_matrices/Stacking_Ensemble_confusion_matrix_normalized.png'
+2025-05-28 14:26:46,584 - INFO - === Pipeline execution complete. Results saved to logs/training_log.txt ===
+2025-05-28 14:26:50,790 - INFO - 
+=== Starting GAN-Augmented Model Evaluation Pipeline ===
+2025-05-28 14:26:50,830 - INFO - Dataset loaded from dataset/dataset95_5_top20.csv. Shape: (61039, 21)
+2025-05-28 14:26:50,843 - INFO - Before augmentation: Legitimate=40591 (95.00%), Phishing=2136 (5.00%)
+2025-05-28 14:26:50,844 - INFO - Initializing Keras-based GAN for data augmentation...
+2025-05-28 14:26:52,167 - INFO - Epoch 1/100 | D Loss: 0.3351 | G Loss: 0.8624
+2025-05-28 14:26:53,413 - INFO - Epoch 11/100 | D Loss: 0.2003 | G Loss: 2.3161
+2025-05-28 14:26:54,803 - INFO - Epoch 21/100 | D Loss: 0.1179 | G Loss: 2.3171
+2025-05-28 14:26:56,169 - INFO - Epoch 31/100 | D Loss: 0.2116 | G Loss: 1.3322
+2025-05-28 14:26:57,526 - INFO - Epoch 41/100 | D Loss: 0.0020 | G Loss: 5.8555
+2025-05-28 14:26:58,961 - INFO - Epoch 51/100 | D Loss: 0.0011 | G Loss: 7.0036
+2025-05-28 14:27:00,368 - INFO - Epoch 61/100 | D Loss: 0.0005 | G Loss: 7.7093
+2025-05-28 14:27:01,881 - INFO - Epoch 71/100 | D Loss: 0.0004 | G Loss: 7.5878
+2025-05-28 14:27:03,344 - INFO - Epoch 81/100 | D Loss: 0.0003 | G Loss: 8.3360
+2025-05-28 14:27:04,730 - INFO - Epoch 91/100 | D Loss: 0.0010 | G Loss: 6.8326
+2025-05-28 14:27:06,003 - INFO - Epoch 100/100 | D Loss: 0.0005 | G Loss: 7.6099
+2025-05-28 14:27:06,003 - INFO - GAN training complete. Generating synthetic phishing samples...
+2025-05-28 14:27:06,197 - INFO - After augmentation: Legitimate=40591 (87.12%), Synthetic Phishing=6000 (12.88%)
+2025-05-28 14:27:06,197 - INFO - Keras-based GAN augmentation complete.
+2025-05-28 14:27:06,494 - INFO - Augmented dataset saved to 'augmented_dataset.csv'
+2025-05-28 14:27:06,504 - INFO - ===== Evaluating Logistic Regression =====
+2025-05-28 14:27:06,532 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:27:06,533 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:27:06,533 - INFO - Precision: 1.0000
+2025-05-28 14:27:06,533 - INFO - Recall: 1.0000
+2025-05-28 14:27:06,533 - INFO - F1 Score: 1.0000
+2025-05-28 14:27:06,533 - INFO - Saved trained model to models/Logistic_Regression.joblib
+2025-05-28 14:27:06,533 - INFO - ===== Evaluating Random Forest =====
+2025-05-28 14:27:07,016 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:27:07,016 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:27:07,016 - INFO - Precision: 1.0000
+2025-05-28 14:27:07,016 - INFO - Recall: 1.0000
+2025-05-28 14:27:07,016 - INFO - F1 Score: 1.0000
+2025-05-28 14:27:07,037 - INFO - Saved trained model to models/Random_Forest.joblib
+2025-05-28 14:27:07,037 - INFO - ===== Evaluating XGBoost =====
+2025-05-28 14:27:07,123 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:27:07,123 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:27:07,123 - INFO - Precision: 1.0000
+2025-05-28 14:27:07,123 - INFO - Recall: 1.0000
+2025-05-28 14:27:07,123 - INFO - F1 Score: 1.0000
+2025-05-28 14:27:07,124 - INFO - Saved trained model to models/XGBoost.joblib
+2025-05-28 14:27:07,124 - INFO - ===== Evaluating CatBoost =====
+2025-05-28 14:27:11,177 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:27:11,177 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:27:11,177 - INFO - Precision: 1.0000
+2025-05-28 14:27:11,177 - INFO - Recall: 1.0000
+2025-05-28 14:27:11,177 - INFO - F1 Score: 1.0000
+2025-05-28 14:27:11,178 - INFO - Saved trained model to models/CatBoost.joblib
+2025-05-28 14:27:11,178 - INFO - ===== Evaluating Stacking Ensemble =====
+2025-05-28 14:27:13,839 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:27:13,839 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:27:13,839 - INFO - Precision: 1.0000
+2025-05-28 14:27:13,839 - INFO - Recall: 1.0000
+2025-05-28 14:27:13,839 - INFO - F1 Score: 1.0000
+2025-05-28 14:27:13,873 - INFO - Saved trained model to models/Stacking_Ensemble.joblib
+2025-05-28 14:27:13,873 - INFO - ===== Evaluating Logistic Regression =====
+2025-05-28 14:27:13,906 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:27:13,906 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:27:13,906 - INFO - Precision: 1.0000
+2025-05-28 14:27:13,906 - INFO - Recall: 1.0000
+2025-05-28 14:27:13,906 - INFO - F1 Score: 1.0000
+2025-05-28 14:27:13,907 - INFO - Saved trained model to models/Logistic_Regression.joblib
+2025-05-28 14:27:13,907 - INFO - ===== Evaluating Random Forest =====
+2025-05-28 14:27:14,385 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:27:14,385 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:27:14,385 - INFO - Precision: 1.0000
+2025-05-28 14:27:14,385 - INFO - Recall: 1.0000
+2025-05-28 14:27:14,385 - INFO - F1 Score: 1.0000
+2025-05-28 14:27:14,406 - INFO - Saved trained model to models/Random_Forest.joblib
+2025-05-28 14:27:14,406 - INFO - ===== Evaluating XGBoost =====
+2025-05-28 14:27:14,489 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:27:14,489 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:27:14,489 - INFO - Precision: 1.0000
+2025-05-28 14:27:14,489 - INFO - Recall: 1.0000
+2025-05-28 14:27:14,489 - INFO - F1 Score: 1.0000
+2025-05-28 14:27:14,490 - INFO - Saved trained model to models/XGBoost.joblib
+2025-05-28 14:27:14,490 - INFO - ===== Evaluating CatBoost =====
+2025-05-28 14:27:18,443 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:27:18,443 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:27:18,443 - INFO - Precision: 1.0000
+2025-05-28 14:27:18,443 - INFO - Recall: 1.0000
+2025-05-28 14:27:18,443 - INFO - F1 Score: 1.0000
+2025-05-28 14:27:18,444 - INFO - Saved trained model to models/CatBoost.joblib
+2025-05-28 14:27:18,444 - INFO - ===== Evaluating Stacking Ensemble =====
+2025-05-28 14:27:21,159 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:27:21,159 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:27:21,159 - INFO - Precision: 1.0000
+2025-05-28 14:27:21,159 - INFO - Recall: 1.0000
+2025-05-28 14:27:21,159 - INFO - F1 Score: 1.0000
+2025-05-28 14:27:21,183 - INFO - Saved trained model to models/Stacking_Ensemble.joblib
+2025-05-28 14:27:21,185 - INFO - Model evaluation summary saved to 'model_performance_summary.csv'
+2025-05-28 14:27:21,393 - INFO - Performance comparison plot saved to 'model_comparison_plot.png'
+2025-05-28 14:27:21,515 - INFO - Saved confusion matrix to 'confusion_matrices/Logistic_Regression_confusion_matrix.png'
+2025-05-28 14:27:21,586 - INFO - Saved normalized confusion matrix to 'confusion_matrices/Logistic_Regression_confusion_matrix_normalized.png'
+2025-05-28 14:27:21,689 - INFO - Saved confusion matrix to 'confusion_matrices/Random_Forest_confusion_matrix.png'
+2025-05-28 14:27:21,761 - INFO - Saved normalized confusion matrix to 'confusion_matrices/Random_Forest_confusion_matrix_normalized.png'
+2025-05-28 14:27:21,835 - INFO - Saved confusion matrix to 'confusion_matrices/XGBoost_confusion_matrix.png'
+2025-05-28 14:27:21,904 - INFO - Saved normalized confusion matrix to 'confusion_matrices/XGBoost_confusion_matrix_normalized.png'
+2025-05-28 14:27:22,036 - INFO - Saved confusion matrix to 'confusion_matrices/CatBoost_confusion_matrix.png'
+2025-05-28 14:27:22,106 - INFO - Saved normalized confusion matrix to 'confusion_matrices/CatBoost_confusion_matrix_normalized.png'
+2025-05-28 14:27:22,226 - INFO - Saved confusion matrix to 'confusion_matrices/Stacking_Ensemble_confusion_matrix.png'
+2025-05-28 14:27:22,298 - INFO - Saved normalized confusion matrix to 'confusion_matrices/Stacking_Ensemble_confusion_matrix_normalized.png'
+2025-05-28 14:27:22,298 - INFO - === Pipeline execution complete. Results saved to logs/training_log.txt ===
+2025-05-28 14:27:26,338 - INFO - 
+=== Starting GAN-Augmented Model Evaluation Pipeline ===
+2025-05-28 14:27:26,402 - INFO - Dataset loaded from dataset/dataset95_5_top30.csv. Shape: (61039, 31)
+2025-05-28 14:27:26,418 - INFO - Before augmentation: Legitimate=40591 (95.00%), Phishing=2136 (5.00%)
+2025-05-28 14:27:26,418 - INFO - Initializing Keras-based GAN for data augmentation...
+2025-05-28 14:27:27,742 - INFO - Epoch 1/100 | D Loss: 0.1718 | G Loss: 1.4559
+2025-05-28 14:27:29,060 - INFO - Epoch 11/100 | D Loss: 0.0099 | G Loss: 5.0537
+2025-05-28 14:27:30,500 - INFO - Epoch 21/100 | D Loss: 0.0012 | G Loss: 6.6325
+2025-05-28 14:27:31,956 - INFO - Epoch 31/100 | D Loss: 0.0004 | G Loss: 7.2450
+2025-05-28 14:27:33,419 - INFO - Epoch 41/100 | D Loss: 0.0008 | G Loss: 7.4342
+2025-05-28 14:27:34,858 - INFO - Epoch 51/100 | D Loss: 0.0002 | G Loss: 8.4336
+2025-05-28 14:27:36,316 - INFO - Epoch 61/100 | D Loss: 0.0001 | G Loss: 9.0943
+2025-05-28 14:27:37,788 - INFO - Epoch 71/100 | D Loss: 0.0003 | G Loss: 8.5827
+2025-05-28 14:27:39,275 - INFO - Epoch 81/100 | D Loss: 0.0002 | G Loss: 8.6016
+2025-05-28 14:27:40,764 - INFO - Epoch 91/100 | D Loss: 0.3514 | G Loss: 2.4504
+2025-05-28 14:27:42,106 - INFO - Epoch 100/100 | D Loss: 0.1015 | G Loss: 2.2790
+2025-05-28 14:27:42,106 - INFO - GAN training complete. Generating synthetic phishing samples...
+2025-05-28 14:27:42,303 - INFO - After augmentation: Legitimate=40591 (87.12%), Synthetic Phishing=6000 (12.88%)
+2025-05-28 14:27:42,303 - INFO - Keras-based GAN augmentation complete.
+2025-05-28 14:27:42,731 - INFO - Augmented dataset saved to 'augmented_dataset.csv'
+2025-05-28 14:27:42,742 - INFO - ===== Evaluating Logistic Regression =====
+2025-05-28 14:27:42,783 - INFO - Train Accuracy: 0.9190
+2025-05-28 14:27:42,783 - INFO - Test Accuracy: 0.9137
+2025-05-28 14:27:42,783 - INFO - Precision: 0.5988
+2025-05-28 14:27:42,783 - INFO - Recall: 1.0000
+2025-05-28 14:27:42,783 - INFO - F1 Score: 0.7491
+2025-05-28 14:27:42,784 - INFO - Saved trained model to models/Logistic_Regression.joblib
+2025-05-28 14:27:42,784 - INFO - ===== Evaluating Random Forest =====
+2025-05-28 14:27:43,286 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:27:43,286 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:27:43,286 - INFO - Precision: 1.0000
+2025-05-28 14:27:43,286 - INFO - Recall: 1.0000
+2025-05-28 14:27:43,286 - INFO - F1 Score: 1.0000
+2025-05-28 14:27:43,307 - INFO - Saved trained model to models/Random_Forest.joblib
+2025-05-28 14:27:43,307 - INFO - ===== Evaluating XGBoost =====
+2025-05-28 14:27:43,408 - INFO - Train Accuracy: 0.9997
+2025-05-28 14:27:43,408 - INFO - Test Accuracy: 0.9999
+2025-05-28 14:27:43,408 - INFO - Precision: 1.0000
+2025-05-28 14:27:43,408 - INFO - Recall: 0.9994
+2025-05-28 14:27:43,408 - INFO - F1 Score: 0.9997
+2025-05-28 14:27:43,409 - INFO - Saved trained model to models/XGBoost.joblib
+2025-05-28 14:27:43,409 - INFO - ===== Evaluating CatBoost =====
+2025-05-28 14:27:47,675 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:27:47,675 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:27:47,675 - INFO - Precision: 1.0000
+2025-05-28 14:27:47,675 - INFO - Recall: 1.0000
+2025-05-28 14:27:47,675 - INFO - F1 Score: 1.0000
+2025-05-28 14:27:47,676 - INFO - Saved trained model to models/CatBoost.joblib
+2025-05-28 14:27:47,677 - INFO - ===== Evaluating Stacking Ensemble =====
+2025-05-28 14:27:50,555 - INFO - Train Accuracy: 0.9999
+2025-05-28 14:27:50,555 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:27:50,555 - INFO - Precision: 1.0000
+2025-05-28 14:27:50,555 - INFO - Recall: 1.0000
+2025-05-28 14:27:50,555 - INFO - F1 Score: 1.0000
+2025-05-28 14:27:50,591 - INFO - Saved trained model to models/Stacking_Ensemble.joblib
+2025-05-28 14:27:50,592 - INFO - ===== Evaluating Logistic Regression =====
+2025-05-28 14:27:50,643 - INFO - Train Accuracy: 0.9190
+2025-05-28 14:27:50,643 - INFO - Test Accuracy: 0.9137
+2025-05-28 14:27:50,643 - INFO - Precision: 0.5988
+2025-05-28 14:27:50,643 - INFO - Recall: 1.0000
+2025-05-28 14:27:50,643 - INFO - F1 Score: 0.7491
+2025-05-28 14:27:50,644 - INFO - Saved trained model to models/Logistic_Regression.joblib
+2025-05-28 14:27:50,644 - INFO - ===== Evaluating Random Forest =====
+2025-05-28 14:27:51,142 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:27:51,142 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:27:51,142 - INFO - Precision: 1.0000
+2025-05-28 14:27:51,142 - INFO - Recall: 1.0000
+2025-05-28 14:27:51,142 - INFO - F1 Score: 1.0000
+2025-05-28 14:27:51,163 - INFO - Saved trained model to models/Random_Forest.joblib
+2025-05-28 14:27:51,163 - INFO - ===== Evaluating XGBoost =====
+2025-05-28 14:27:51,262 - INFO - Train Accuracy: 0.9997
+2025-05-28 14:27:51,262 - INFO - Test Accuracy: 0.9999
+2025-05-28 14:27:51,262 - INFO - Precision: 1.0000
+2025-05-28 14:27:51,262 - INFO - Recall: 0.9994
+2025-05-28 14:27:51,262 - INFO - F1 Score: 0.9997
+2025-05-28 14:27:51,263 - INFO - Saved trained model to models/XGBoost.joblib
+2025-05-28 14:27:51,263 - INFO - ===== Evaluating CatBoost =====
+2025-05-28 14:27:55,438 - INFO - Train Accuracy: 1.0000
+2025-05-28 14:27:55,438 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:27:55,438 - INFO - Precision: 1.0000
+2025-05-28 14:27:55,438 - INFO - Recall: 1.0000
+2025-05-28 14:27:55,438 - INFO - F1 Score: 1.0000
+2025-05-28 14:27:55,439 - INFO - Saved trained model to models/CatBoost.joblib
+2025-05-28 14:27:55,439 - INFO - ===== Evaluating Stacking Ensemble =====
+2025-05-28 14:27:58,338 - INFO - Train Accuracy: 0.9999
+2025-05-28 14:27:58,338 - INFO - Test Accuracy: 1.0000
+2025-05-28 14:27:58,338 - INFO - Precision: 1.0000
+2025-05-28 14:27:58,338 - INFO - Recall: 1.0000
+2025-05-28 14:27:58,338 - INFO - F1 Score: 1.0000
+2025-05-28 14:27:58,369 - INFO - Saved trained model to models/Stacking_Ensemble.joblib
+2025-05-28 14:27:58,370 - INFO - Model evaluation summary saved to 'model_performance_summary.csv'
+2025-05-28 14:27:58,608 - INFO - Performance comparison plot saved to 'model_comparison_plot.png'
+2025-05-28 14:27:58,734 - INFO - Saved confusion matrix to 'confusion_matrices/Logistic_Regression_confusion_matrix.png'
+2025-05-28 14:27:58,805 - INFO - Saved normalized confusion matrix to 'confusion_matrices/Logistic_Regression_confusion_matrix_normalized.png'
+2025-05-28 14:27:58,908 - INFO - Saved confusion matrix to 'confusion_matrices/Random_Forest_confusion_matrix.png'
+2025-05-28 14:27:58,978 - INFO - Saved normalized confusion matrix to 'confusion_matrices/Random_Forest_confusion_matrix_normalized.png'
+2025-05-28 14:27:59,053 - INFO - Saved confusion matrix to 'confusion_matrices/XGBoost_confusion_matrix.png'
+2025-05-28 14:27:59,126 - INFO - Saved normalized confusion matrix to 'confusion_matrices/XGBoost_confusion_matrix_normalized.png'
+2025-05-28 14:27:59,285 - INFO - Saved confusion matrix to 'confusion_matrices/CatBoost_confusion_matrix.png'
+2025-05-28 14:27:59,355 - INFO - Saved normalized confusion matrix to 'confusion_matrices/CatBoost_confusion_matrix_normalized.png'
+2025-05-28 14:27:59,466 - INFO - Saved confusion matrix to 'confusion_matrices/Stacking_Ensemble_confusion_matrix.png'
+2025-05-28 14:27:59,537 - INFO - Saved normalized confusion matrix to 'confusion_matrices/Stacking_Ensemble_confusion_matrix_normalized.png'
+2025-05-28 14:27:59,537 - INFO - === Pipeline execution complete. Results saved to logs/training_log.txt ===

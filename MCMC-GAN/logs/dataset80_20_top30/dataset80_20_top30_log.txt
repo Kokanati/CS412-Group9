@@ -1,0 +1,36 @@
+2025-05-28 15:30:37,810 - INFO - 
+=== Starting GAN-Augmented Model Evaluation Pipeline ===
+2025-05-28 15:30:37,886 - INFO - Dataset loaded from dataset/dataset80_20_top30.csv. Shape: (72500, 31)
+2025-05-28 15:36:12,311 - INFO - 
+=== Starting GAN-Augmented Model Evaluation Pipeline ===
+2025-05-28 15:36:12,385 - INFO - Dataset loaded from dataset/dataset80_20_top30.csv. Shape: (72500, 31)
+2025-05-28 15:36:12,406 - INFO - Before augmentation: Legitimate=40600 (80.00%), Phishing=10150 (20.00%)
+2025-05-28 15:36:12,406 - INFO - Initializing Keras-based GAN for data augmentation...
+2025-05-28 15:36:14,105 - INFO - Epoch 1/100 | D Loss: 0.1469 | G Loss: 1.8029
+2025-05-28 15:36:21,023 - INFO - Epoch 11/100 | D Loss: 0.2448 | G Loss: 2.6236
+2025-05-28 15:36:27,694 - INFO - Epoch 21/100 | D Loss: 0.0001 | G Loss: 9.4687
+2025-05-28 15:36:34,307 - INFO - Epoch 31/100 | D Loss: 0.2900 | G Loss: 2.1941
+2025-05-28 15:36:40,860 - INFO - Epoch 41/100 | D Loss: 0.1176 | G Loss: 2.1721
+2025-05-28 15:36:47,484 - INFO - Epoch 51/100 | D Loss: 0.0017 | G Loss: 6.5549
+2025-05-28 15:36:54,187 - INFO - Epoch 61/100 | D Loss: 0.0000 | G Loss: 13.1974
+2025-05-28 15:37:00,820 - INFO - Epoch 71/100 | D Loss: 0.0000 | G Loss: 14.6500
+2025-05-28 15:37:07,549 - INFO - Epoch 81/100 | D Loss: 0.0000 | G Loss: 15.6356
+2025-05-28 15:37:14,293 - INFO - Epoch 91/100 | D Loss: 0.0016 | G Loss: 6.6298
+2025-05-28 15:37:20,416 - INFO - Epoch 100/100 | D Loss: 0.0763 | G Loss: 2.4814
+2025-05-28 15:37:20,416 - INFO - GAN training complete. Generating synthetic phishing samples...
+2025-05-28 15:37:21,044 - INFO - After augmentation: Legitimate=40600 (50.00%), Synthetic Phishing=40600 (50.00%)
+2025-05-28 15:37:21,044 - INFO - Keras-based GAN augmentation complete.
+2025-05-28 15:37:22,109 - INFO - Augmented dataset saved to 'outputs/dataset80_20_top30/augmented_dataset.csv'
+2025-05-28 15:37:22,127 - INFO - ===== Evaluating Logistic Regression =====
+2025-05-28 15:37:23,449 - INFO - Saved trained model to outputs/dataset80_20_top30/models/Logistic_Regression.joblib
+2025-05-28 15:37:23,806 - INFO - ===== Evaluating Random Forest =====
+2025-05-28 15:37:26,877 - INFO - Saved trained model to outputs/dataset80_20_top30/models/Random_Forest.joblib
+2025-05-28 15:37:27,030 - INFO - ===== Evaluating XGBoost =====
+2025-05-28 15:37:27,350 - INFO - Saved trained model to outputs/dataset80_20_top30/models/XGBoost.joblib
+2025-05-28 15:37:27,495 - INFO - ===== Evaluating CatBoost =====
+2025-05-28 15:37:34,263 - INFO - Saved trained model to outputs/dataset80_20_top30/models/CatBoost.joblib
+2025-05-28 15:37:34,409 - INFO - ===== Evaluating Stacking Ensemble =====
+2025-05-28 15:37:54,079 - INFO - Saved trained model to outputs/dataset80_20_top30/models/Stacking_Ensemble.joblib
+2025-05-28 15:37:54,229 - INFO - Model evaluation summary saved to 'outputs/dataset80_20_top30/model_performance_summary.csv'
+2025-05-28 15:37:54,304 - INFO - Performance comparison plot saved to 'outputs/dataset80_20_top30/model_comparison_plot.png'
+2025-05-28 15:37:54,304 - INFO - === Pipeline execution complete. ===
