@@ -1,4 +1,4 @@
-# Phishing Website Detection Using MCMC-GAN and Stacking Ensemble
+# CS412- Group 9 Phishing Website Detection 
 
 **Developed by: CS412 Group 9**  
 **Academic Year: 2025**
@@ -14,6 +14,7 @@ cd CS412-Group9
 ```
 
 ## Dataset Directory
+---
 Contains the raw_dataset.csv file and use the script to modify the dataset to a more realistic imbalance. It will generate 3 versions of imbalance, 80/20, 90/10 and 95/5.
 
 To run the script 
@@ -21,7 +22,6 @@ python undersample.py
 
 it will generate 3 files then run the feature_selection.py. This will apply dimension modification and generate 3 different versions of 30 features, 20 and 10.
 You should now have 9 sets of dataset to use for testing.
----
 
 ## Environment Setup
 
