@@ -1,0 +1,9 @@
+# Developed by: CS412 Group 9
+
+pandas
+numpy
+scikit-learn
+tensorflow
+xgboost
+catboost
+joblib
